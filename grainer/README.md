@@ -4,7 +4,9 @@ Professional real-time granular synthesis plugin for VCV Rack.
 
 ## Overview
 
-Grainer transforms audio input into granular textures through sophisticated grain manipulation. With support for up to 32 simultaneous grains, it offers unprecedented control over granular synthesis parameters.
+Grainer is a real-time granular synthesis processor with advanced randomization that transforms live audio through controllable grain manipulation. Control pitch, speed, size, and density while introducing organic variations that reveal unexpected textures and sounds.
+
+With support for up to 32 simultaneous grains, Grainer balances precise control with creative unpredictability, enabling musicians to discover new sounds during live performance and sound design.
 
 ## Key Features
 
@@ -17,21 +19,34 @@ Grainer transforms audio input into granular textures through sophisticated grai
 ## Quick Start
 
 1. **Connect Audio**: Patch audio source to AUDIO INPUT
-2. **Set Grain Size**: Adjust GRAIN_SIZE_PARAM (0.01s - 2.0s)
-3. **Control Density**: Set GRAIN_DENSITY_PARAM (0.1Hz - 100Hz)
-4. **Shape Sound**: Use PITCH, SPREAD, and FEEDBACK controls
-5. **Mix Output**: Balance with WET_PARAM
+2. **Set Grain Size**: Adjust GRAIN_LENGTH_PARAM (1.6ms - 1000ms)
+3. **Control Density**: Set DENSITY_PARAM (0.1Hz - 100Hz)
+4. **Shape Sound**: Use PITCH, SPREAD controls
+5. **Mix Output**: Balance with DRY_WET_PARAM
 
 ## Parameters
 
 ### Core Controls
 
-- **Grain Size**: Duration of individual grains (10ms to 2 seconds)
-- **Grain Density**: Rate of new grain creation (0.1Hz to 100Hz)
-- **Pitch**: Pitch shifting in semitones (±2 octaves)
-- **Spread**: Random pitch variation for natural textures
-- **Feedback**: Amount of processed signal fed back to input
-- **Wet/Dry**: Balance between processed and original signal
+- **Grain Length**: Duration of individual grains (1.6ms to 1000ms)
+- **Density**: Rate of new grain creation (0.1Hz to 100Hz)
+- **Pitch**: Pitch shifting ratio (1/3x to 3x, center = 1x)
+- **Position**: Delay from REC position (0-100%: 100%=REC position, 0%=maximum delay)
+- **Stereo Spread**: Random stereo positioning for spatial textures (0-1)
+
+### Advanced Controls
+
+- **Pitch Random**: Random pitch variation amount (0-3)
+- **Pitch Quantize**: Pitch quantization to musical intervals (0-1)
+- **Position Random**: Random position variation within grain placement (0-1)
+- **Volume**: Input gain control (-60dB to +6dB, center = 0dB)
+- **Dry/Wet**: Balance between original and processed signal (0-1)
+- **Reverb**: Built-in reverb amount (0-1)
+
+### Transport Controls
+
+- **Forward/Reverse**: Toggle playback direction (button) - Light illuminates in Reverse mode
+- **Freeze**: Freeze current buffer content (button/CV gate) - Light illuminates when frozen
 
 ### CV Inputs
 
@@ -43,20 +58,9 @@ All parameters support CV modulation:
 
 ## Applications
 
-### Sound Design
 - Atmospheric textures and pads
 - Rhythmic granular sequences
 - Experimental sound manipulation
-
-### Music Production
-- Vocal processing and effects
-- Drum and percussion enhancement
-- Ambient and electronic music creation
-
-### Live Performance
-- Real-time audio transformation
-- Dynamic texture generation
-- Interactive granular instruments
 
 ## Technical Specifications
 
@@ -65,16 +69,3 @@ All parameters support CV modulation:
 - **Envelope**: Hann window for natural grain transitions
 - **Sample Rate**: Supports all VCV Rack sample rates
 - **Audio Range**: ±5V VCV Rack standard
-
-## Tips & Tricks
-
-1. **Start Simple**: Begin with longer grains and lower density
-2. **Use Feedback Carefully**: High feedback can create resonant effects
-3. **Modulate Density**: Create rhythmic patterns with CV modulation
-4. **Combine with Filters**: Post-processing enhances granular textures
-5. **Experiment with Spread**: Adds organic variation to static sounds
-
-## Related Documents
-
-- [Parameter Details](parameters.md)
-- [User Guide](user-guide.md)

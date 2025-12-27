@@ -110,8 +110,3 @@ EQ8 provides professional-grade equalization with eight carefully selected frequ
 3. **Gentle Adjustments**: Small changes often yield better results
 4. **Band Selection**: Each band targets specific musical elements
 5. **Monitor Levels**: Be aware of overall gain changes
-
-## Related Documents
-
-- [Frequency Bands Detail](frequency-bands.md)
-- [User Guide](user-guide.md)
