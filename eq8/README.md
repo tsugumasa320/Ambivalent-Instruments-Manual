@@ -1,10 +1,10 @@
-# EQ8 - Professional Parametric Equalizer
+# EQ8 - 8-Band Parametric Equalizer
 
 8-band stereo parametric equalizer optimized for music production in VCV Rack.
 
 ## Overview
 
-EQ8 provides professional-grade equalization with eight carefully selected frequency bands designed for musical applications. Each band offers precise ±12dB gain control with high-quality biquad filtering.
+EQ8 provides high-quality equalization with eight carefully selected frequency bands designed for musical applications. Each band offers precise ±12dB gain control with high-quality biquad filtering.
 
 ## Key Features
 
@@ -12,7 +12,7 @@ EQ8 provides professional-grade equalization with eight carefully selected frequ
 - **Stereo Processing**: Independent left/right channel processing
 - **High-Quality Filters**: Biquad peaking filters with Q=1.0
 - **Real-time Processing**: Zero-latency audio processing
-- **Professional Grade**: Optimized for music production workflows
+- **Production Ready**: Optimized for music production workflows
 
 ## Quick Start
 

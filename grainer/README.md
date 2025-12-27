@@ -1,6 +1,6 @@
 # Grainer - Granular Synthesis Processor
 
-Professional real-time granular synthesis plugin for VCV Rack.
+Real-time granular synthesis plugin for VCV Rack.
 
 ## Overview
 
@@ -14,7 +14,7 @@ With support for up to 32 simultaneous grains, Grainer balances precise control 
 - **Real-time Processing**: Low-latency granular synthesis optimized for live performance
 - **Advanced Modulation**: Full CV control over all parameters
 - **High-Quality Audio**: Linear interpolation for pristine pitch shifting
-- **Professional Grade**: Built for serious music production and sound design
+- **Production Ready**: Built for serious music production and sound design
 
 ## Quick Start
 
