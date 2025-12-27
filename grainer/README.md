@@ -8,7 +8,7 @@ Grainer is a real-time granular synthesis processor with advanced randomization 
 
 With support for up to 32 simultaneous grains, Grainer balances precise control with creative unpredictability, enabling musicians to discover new sounds during live performance and sound design.
 
-This VCV Rack module is based on the original Max/MSP grainer plugin: https://tsugumasa320.gumroad.com/l/grainer
+This VCV Rack module is based on the original Max for Live grainer plugin: https://tsugumasa320.gumroad.com/l/grainer
 
 ## Key Features
 
