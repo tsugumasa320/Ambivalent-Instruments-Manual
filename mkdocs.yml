@@ -8,8 +8,7 @@ repo_url: https://github.com/tsugumasa320/Ambivalent-Instruments-Manual
 
 # Configuration
 theme:
-  name: mkdocs
-  custom_dir: custom_theme
+  name: readthedocs
 
 # Navigation
 nav:
@@ -54,7 +53,5 @@ markdown_extensions:
   - pymdownx.tilde
 
 # Extra
-extra_css:
-  - css/theme_extra.css
 extra:
   generator: false
