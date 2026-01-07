@@ -33,6 +33,7 @@ jobs:
 
     - name: Build documentation
       run: |
+        mkdir -p build/doxygen
         doxygen Doxyfile
 
     - name: Setup Pages
