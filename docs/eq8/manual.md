@@ -12,15 +12,19 @@ EQ8 is a high-quality equalizer featuring eight carefully selected frequency ban
 - **Stereo Processing**: Independent left/right channel processing
 - **High-Quality Filters**: Low shelf/High shelf and peaking bands (Q=1.0)
 - **Real-time Processing**: Zero-latency audio processing
-- **Output Soft Clipping**: Optional setting from context menu
+- **Output Soft Clipping**: On/Off toggle from context menu
+- **Mono Operation**: When right channel is unconnected, left channel is automatically copied to both sides
+- **VU Meters**: Visual level display for each band and master output
 - **Production Ready**: Optimized for music production workflows
 
 ## Quick Start
 
 1. **Connect Audio**: Connect stereo source to LEFT/RIGHT inputs
+   - When right channel is unconnected, left channel is automatically applied to both sides
 2. **Adjust Bands**: Use frequency sliders to boost/cut
 3. **Connect Output**: Connect LEFT/RIGHT outputs to mixer
 4. **Fine-tune**: Adjust while listening to the full track
+5. **Options**: Right-click to toggle soft clipping on/off
 
 ## Frequency Bands
 
@@ -104,6 +108,8 @@ EQ8 is a high-quality equalizer featuring eight carefully selected frequency ban
 - **Processing**: Real-time, zero-latency
 - **Channels**: Stereo (independent left/right)
 - **Sample Rate**: All VCV Rack sample rates supported
+- **Soft Clipping**: Optional sine wave soft clipping
+- **VU Meters**: Bandpass filter (Q=0.707) based level detection for each band
 
 ## Best Practices
 
@@ -111,4 +117,6 @@ EQ8 is a high-quality equalizer featuring eight carefully selected frequency ban
 2. **Musical Context**: Always adjust EQ within the context of the full mix
 3. **Gentle Adjustments**: Small changes often yield better results
 4. **Band Selection**: Each band targets specific musical elements
-5. **Monitor Levels**: Be aware of overall gain changes
+5. **Monitor Levels**: Use VU meters to monitor band activity levels
+6. **Soft Clipping**: Enable when applying significant boosts to prevent distortion
+7. **Mono Processing**: Mono sources can be processed using left input only
