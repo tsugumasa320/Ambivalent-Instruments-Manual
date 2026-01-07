@@ -1,33 +1,14 @@
 PROJECT_NAME           = "Ambivalent Instruments Manual"
 PROJECT_BRIEF          = "VCV Rack plugin manual (Grainer + EQ8)"
 OUTPUT_DIRECTORY       = build/doxygen
-OPTIMIZE_OUTPUT_FOR_C  = NO
-OPTIMIZE_OUTPUT_JAVA   = NO
-OPTIMIZE_FOR_FORTRAN   = NO
-OPTIMIZE_OUTPUT_VHDL   = NO
 
 INPUT                  = README.md CHANGELOG.md pages.md grainer/README.md grainer/README_JP.md eq8/README.md eq8/README_JP.md
 FILE_PATTERNS          = *.md
-RECURSIVE              = NO
 USE_MDFILE_AS_MAINPAGE = README.md
 MARKDOWN_SUPPORT       = YES
 GENERATE_LATEX         = NO
 
 GENERATE_HTML          = YES
 HTML_OUTPUT            = html
-HTML_DYNAMIC_MENUS     = YES
-HTML_COLORSTYLE        = LIGHT
-HTML_COLORSTYLE_HUE    = 200
-HTML_COLORSTYLE_SAT    = 40
-HTML_COLORSTYLE_GAMMA  = 80
-
-HAVE_DOT               = YES
-DOT_IMAGE_FORMAT       = svg
-CALL_GRAPH             = YES
-CALLER_GRAPH           = YES
-UML_LOOK               = YES
 
 QUIET                  = YES
-WARNINGS               = YES
-WARN_IF_UNDOCUMENTED   = NO
-WARN_IF_DOC_ERROR      = YES
