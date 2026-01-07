@@ -1,0 +1,88 @@
+/* Dark mode theme for default MkDocs */
+body {
+    background-color: #2e3440;
+    color: #d8dee9;
+}
+
+.navbar {
+    background-color: #3b4252;
+    border-bottom: 1px solid #4c566a;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #eceff4 !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #88c0d0 !important;
+}
+
+.col-md-9 {
+    background-color: #2e3440;
+}
+
+.col-md-3 {
+    background-color: #3b4252;
+}
+
+.bs-sidenav {
+    background-color: #3b4252;
+}
+
+.bs-sidenav > li > a {
+    color: #d8dee9;
+    border-left: 2px solid transparent;
+}
+
+.bs-sidenav > li > a:hover {
+    background-color: #4c566a;
+    color: #eceff4;
+}
+
+.bs-sidenav > .active > a {
+    background-color: #5e81ac;
+    border-left-color: #88c0d0;
+    color: #eceff4;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #eceff4;
+}
+
+a {
+    color: #88c0d0;
+}
+
+a:hover {
+    color: #81a1c1;
+}
+
+code {
+    background-color: #4c566a;
+    color: #d8dee9;
+    border: 1px solid #5e81ac;
+}
+
+pre {
+    background-color: #3b4252;
+    border: 1px solid #4c566a;
+    color: #d8dee9;
+}
+
+.table {
+    color: #d8dee9;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #3b4252;
+}
+
+.table th {
+    background-color: #4c566a;
+    color: #eceff4;
+    border-color: #5e81ac;
+}
+
+.table td {
+    border-color: #4c566a;
+}
