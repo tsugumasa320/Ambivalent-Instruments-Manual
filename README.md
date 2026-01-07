@@ -4,15 +4,17 @@ Professional VCV Rack plugins documentation.
 
 ## Plugins
 
-### [Grainer](@ref grainer_manual)
+### [Grainer](grainer/)
 Real-time granular synthesis processor with multi-grain engine and advanced modulation.
-- 日本語: [Grainer README_JP](@ref grainer_manual_jp)
+- [English Manual](grainer/manual/)
+- [日本語マニュアル](grainer/manual_jp/)
 
-### [EQ8](@ref eq8_manual)
+### [EQ8](eq8/)
 Professional 8-band stereo parametric equalizer optimized for music production.
-- 日本語: [EQ8 README_JP](@ref eq8_manual_jp)
+- [English Manual](eq8/manual/)
+- [日本語マニュアル](eq8/manual_jp/)
 
-### [Changelog](@ref changelog_manual)
+### [Changelog](changelog/)
 
 ## Support
 
