@@ -1,3 +1,5 @@
+\page changelog_manual Changelog - Ambivalent Instruments
+
 # Changelog - Ambivalent Instruments
 
 All notable changes to Grainer and EQ8 plugins.
