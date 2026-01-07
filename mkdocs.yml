@@ -76,8 +76,4 @@ markdown_extensions:
 
 # Extra
 extra:
-  social:
-    - type: github
-      link: https://github.com/tsugumasa320/Ambivalent-Instruments
-    - type: paypal  
-      link: https://paypal.me/tsugumasa320
+  generator: false
