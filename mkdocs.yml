@@ -1,0 +1,65 @@
+site_name: Ambivalent Instruments
+site_description: VCV Rack plugin documentation (Grainer + EQ8)
+site_url: https://tsugumasa320.github.io/Ambivalent-Instruments-Manual/
+
+# Repository
+repo_name: tsugumasa320/Ambivalent-Instruments-Manual
+repo_url: https://github.com/tsugumasa320/Ambivalent-Instruments-Manual
+
+# Configuration
+theme:
+  name: readthedocs
+  highlightjs: true
+  hljs_languages:
+    - cpp
+    - bash
+
+# Navigation
+nav:
+  - Home: index.md
+  - Grainer:
+    - Overview: grainer/index.md
+    - Manual (English): grainer/manual.md
+    - Manual (日本語): grainer/manual_jp.md
+  - EQ8:
+    - Overview: eq8/index.md  
+    - Manual (English): eq8/manual.md
+    - Manual (日本語): eq8/manual_jp.md
+  - Changelog: changelog.md
+
+# Markdown extensions
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - def_list
+  - footnotes
+  - meta
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Extra
+extra:
+  social:
+    - type: github
+      link: https://github.com/tsugumasa320/Ambivalent-Instruments
+    - type: paypal  
+      link: https://paypal.me/tsugumasa320

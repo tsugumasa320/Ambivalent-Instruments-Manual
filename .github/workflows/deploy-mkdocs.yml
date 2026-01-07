@@ -1,4 +1,4 @@
-name: Build and Deploy Documentation
+name: Build and Deploy MkDocs Documentation
 
 on:
   push:
@@ -26,25 +26,29 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Setup Doxygen
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install MkDocs and dependencies
       run: |
-        sudo apt-get update
-        sudo apt-get install -y doxygen graphviz
+        python -m pip install --upgrade pip
+        pip install mkdocs
+        pip install mkdocs-material
+        pip install pymdown-extensions
 
     - name: Build documentation
       run: |
-        mkdir -p build/doxygen
-        doxygen Doxyfile
+        mkdocs build --strict --verbose
 
     - name: Setup Pages
       uses: actions/configure-pages@v5
-      with:
-        enablement: true
       
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: build/doxygen/html
+        path: site
 
     - name: Deploy to GitHub Pages
       id: deployment

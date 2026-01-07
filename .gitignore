@@ -1,3 +1,4 @@
-build/
-docs/
+site/
+.venv/
+__pycache__/
 *.bak
