@@ -1,26 +1,26 @@
 # EQ8 Manual
 
-8-band stereo parametric equalizer optimized for music production in VCV Rack.
+8-band stereo parametric equalizer for VCV Rack, optimized for music production.
 
 ## Overview
 
-EQ8 provides high-quality equalization with eight carefully selected frequency bands designed for musical applications. Each band offers precise ±12dB gain control with biquad filters, plus a master gain stage from -70dB to +6dB.
+EQ8 is a high-quality equalizer featuring eight carefully selected frequency bands specifically designed for musical applications. Each band provides precise ±12dB gain control, with a master gain function ranging from -70dB to +6dB.
 
 ## Key Features
 
 - **8 Fixed Frequency Bands**: Musically optimized frequency selection
 - **Stereo Processing**: Independent left/right channel processing
-- **High-Quality Filters**: Low/High shelves with peaking bands (Q=1.0)
+- **High-Quality Filters**: Low shelf/High shelf and peaking bands (Q=1.0)
 - **Real-time Processing**: Zero-latency audio processing
-- **Output Soft Clip**: Optional sine soft clip from the context menu
+- **Output Soft Clipping**: Optional setting from context menu
 - **Production Ready**: Optimized for music production workflows
 
 ## Quick Start
 
-1. **Connect Audio**: Patch stereo source to LEFT/RIGHT inputs
-2. **Adjust Bands**: Move sliders to boost/cut desired frequencies
-3. **Monitor Output**: Connect LEFT/RIGHT outputs to your mixer
-4. **Fine-tune**: Use musical reference while adjusting
+1. **Connect Audio**: Connect stereo source to LEFT/RIGHT inputs
+2. **Adjust Bands**: Use frequency sliders to boost/cut
+3. **Connect Output**: Connect LEFT/RIGHT outputs to mixer
+4. **Fine-tune**: Adjust while listening to the full track
 
 ## Frequency Bands
 
@@ -70,18 +70,18 @@ EQ8 provides high-quality equalization with eight carefully selected frequency b
 - Monitor mix adjustment
 - Live instrument processing
 
-## Musical Applications
+## Instrument-Specific Applications
 
 ### Vocal Processing
 - **170 Hz**: Reduce muddiness
-- **600 Hz**: Control nasal frequencies
+- **600 Hz**: Control nasal range
 - **3 kHz**: Enhance presence
 - **12 kHz**: Add air and brightness
 
 ### Drum Processing
 - **60 Hz**: Kick drum sub-bass
 - **170 Hz**: Kick drum punch
-- **1 kHz**: Snare crack
+- **1 kHz**: Snare attack
 - **6 kHz**: Hi-hat presence
 
 ### Bass Guitar
@@ -98,17 +98,17 @@ EQ8 provides high-quality equalization with eight carefully selected frequency b
 
 ## Technical Specifications
 
-- **Bands**: 8 fixed frequency bands
+- **Band Count**: 8 fixed frequency bands
 - **Gain Range**: ±12dB per band, master -70dB to +6dB
 - **Filter Type**: Low/High shelves + peaking (Q=1.0)
 - **Processing**: Real-time, zero-latency
-- **Channels**: Stereo (independent L/R)
+- **Channels**: Stereo (independent left/right)
 - **Sample Rate**: All VCV Rack sample rates supported
 
 ## Best Practices
 
-1. **Subtractive First**: Cut problem frequencies before boosting
-2. **Musical Context**: Always EQ in context of full mix
+1. **Cut First**: Cut problematic frequencies before boosting
+2. **Musical Context**: Always adjust EQ within the context of the full mix
 3. **Gentle Adjustments**: Small changes often yield better results
 4. **Band Selection**: Each band targets specific musical elements
 5. **Monitor Levels**: Be aware of overall gain changes
