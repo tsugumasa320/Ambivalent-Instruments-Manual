@@ -8,7 +8,7 @@ repo_url: https://github.com/tsugumasa320/Ambivalent-Instruments-Manual
 
 # Configuration
 theme:
-  name: material
+  name: dracula
 
 # Navigation
 nav:
