@@ -62,17 +62,19 @@ The built-in reverb is based on the high-quality implementation from Mutable Ins
   - **1**: ±1 octave random variation (2^-1 to 2^+1 = 0.5x to 2.0x)
   - **2**: ±2 octaves random variation (2^-2 to 2^+2 = 0.25x to 4.0x) 
   - **3**: ±3 octaves random variation (2^-3 to 2^+3 = 0.125x to 8.0x)
-- **Pitch Quantize**: Controls how much the pitch parameter is quantized to step intervals (0-1, default 1.0, double-click resets to 1.0)
+- **Pitch Quantize**: Controls how much pitch values are quantized to specific pitch ratios (0-1, default 1.0, double-click resets to 1.0)
   - **GUI Display**: Shows percentage (e.g., "100%" for full quantization, "0%" for none)
-  - **LED Display**: Color-coded brightness indicating musical interval proximity
-  - **Range**: 0 = no quantization (continuous pitch), 1 = full step quantization
-  - **Algorithm**: Applies step-based quantization that rounds pitch values to discrete intervals
-  - **Function**: Modifies the pitch parameter value itself, creating stepped pitch transitions rather than smooth continuous pitch changes
-  - **LED brightness**: Calculated using rational number algorithm (denominators 1-8) to indicate proximity to musical intervals
+  - **LED Display**: Color-coded brightness indicating proximity to musical intervals
+  - **Behavior Examples**:
+    - **Quantize = 0**: Continuous pitch changes (no quantization)
+    - **Quantize = 0.5**: Pitch snaps to 0.5x, 1.0x, 1.5x, 2.0x... multiples
+    - **Quantize = 1.0**: Complete quantization to integer ratios (1.0x, 2.0x, 3.0x...)
+  - **Use Cases**: Helpful for creating harmonic relationships in musical contexts
+  - **LED Brightness**: Uses rational number calculation to indicate proximity to simple musical ratios (octaves, fifths, etc.)
     - Bright LED = current pitch value is close to a simple musical ratio (e.g., 0.5 = octave down, 0.33 = fifth + octave down)
     - Dim LED = pitch value is between musical ratios
     - Off LED = no clear musical ratio match
-  - **Musical behavior**:
+  - **Musical Behavior**:
     - When quantize = 0: Pitch changes smoothly and continuously
     - When quantize = 1: Pitch jumps in discrete steps, creating more pronounced pitch transitions
     - Intermediate values blend between smooth and stepped behavior
