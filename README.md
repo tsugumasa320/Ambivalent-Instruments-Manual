@@ -20,12 +20,8 @@ Professional 8-band stereo parametric equalizer optimized for music production.
 
 For support and donations: [PayPal.Me/tsugumasa320](https://paypal.me/tsugumasa320)
 
-## Doxygen
+## Installation
 
-Generate HTML docs:
-```bash
-cd docs-manual
-doxygen Doxyfile
-```
+These plugins are available through the VCV Rack Library or can be built from source code.
 
-Output is created under `build/doxygen/html/index.html`.
+Visit our [GitHub repository](https://github.com/tsugumasa320/Ambivalent-Instruments) for source code and development information.
