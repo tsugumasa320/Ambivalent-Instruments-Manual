@@ -1,5 +1,3 @@
-\page grainer_manual_jp Grainer - グラニュラーシンセシス・プロセッサー
-
 # Grainer - グラニュラーシンセシス・プロセッサー
 
 VCV Rack向けのリアルタイム・グラニュラーシンセシス・プラグインです。

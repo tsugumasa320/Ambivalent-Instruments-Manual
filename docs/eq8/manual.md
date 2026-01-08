@@ -1,5 +1,3 @@
-\page eq8_manual EQ8 - 8-Band Parametric Equalizer
-
 # EQ8 - 8-Band Parametric Equalizer
 
 8-band stereo parametric equalizer optimized for music production in VCV Rack.
