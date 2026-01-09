@@ -55,45 +55,45 @@ The built-in reverb is based on the high-quality implementation from Mutable Ins
     - When quantize = 0: Pitch changes smoothly and continuously
     - When quantize = 1: Pitch jumps in discrete steps, creating more pronounced pitch transitions
     - Intermediate values blend between smooth and stepped behavior
-- **Window Shape**: Hann shape bias (-1 to +1)
-  - **-1**: Left-biased window shape
-  - **0**: Symmetric Hann window (center position)
-  - **+1**: Right-biased window shape
-- **Position Random**: Random position variation (0-1)
-- **Input Gain**: Input gain (0-1 linear)
-  - **0%**: No input signal
-  - **100%**: Full input gain
-- **Dry/Wet**: Balance between original and processed signal (0-1)
-  - **0%**: 100% dry (original signal only)
-  - **100%**: 100% wet (processed signal only)
-- **Reverb**: Built-in reverb amount (0-1) - based on Mutable Instruments Clouds reverb implementation
-  - **0%**: No reverb
-  - **100%**: Maximum reverb effect
-- **Forward/Reverse**: Toggle playback direction (button)
-  - **Forward**: Normal playback direction (default)
-  - **Reverse**: Reversed playback direction
-- **Freeze**: Freeze current buffer content (button/CV gate)
-  - **GUI Display**: Button illuminated when active
-  - **Off**: Normal recording mode (buffer continuously updates)
-  - **On**: Buffer content frozen (no new recording, existing content preserved)
+  - **Window Shape**: Hann shape bias (-1 to +1)
+    - **-1**: Left-biased window shape
+    - **0**: Symmetric Hann window (center position)
+    - **+1**: Right-biased window shape
+  - **Position Random**: Random position variation (0-1)
+  - **Input Gain**: Input gain (0-1 linear)
+    - **0%**: No input signal
+    - **100%**: Full input gain
+  - **Dry/Wet**: Balance between original and processed signal (0-1)
+    - **0%**: 100% dry (original signal only)
+    - **100%**: 100% wet (processed signal only)
+  - **Reverb**: Built-in reverb amount (0-1) - based on Mutable Instruments Clouds reverb implementation
+    - **0%**: No reverb
+    - **100%**: Maximum reverb effect
+  - **Forward/Reverse**: Toggle playback direction (button)
+    - **Forward**: Normal playback direction (default)
+    - **Reverse**: Reversed playback direction
+  - **Freeze**: Freeze current buffer content (button/CV gate)
+    - **GUI Display**: Button illuminated when active
+    - **Off**: Normal recording mode (buffer continuously updates)
+    - **On**: Buffer content frozen (no new recording, existing content preserved)
 
 ### CV Inputs
 
 Core parameters support CV modulation (±5V bipolar):
-- Grain Length CV
-- Density CV
-- Pitch CV (1V/oct option in context menu)
-- Pitch Random CV
-- Position CV
-- Position Random CV
-- Stereo Spread CV
-- Input Gain CV
-- Dry/Wet CV
-- Reverb CV
-- Window Shape CV
+  - Grain Length CV
+  - Density CV
+  - Pitch CV (1V/oct option in context menu)
+  - Pitch Random CV
+  - Position CV
+  - Position Random CV
+  - Stereo Spread CV
+  - Input Gain CV
+  - Dry/Wet CV
+  - Reverb CV
+  - Window Shape CV
 
 ## Applications
 
-- Atmospheric textures and pads
-- Rhythmic granular sequences
-- Experimental sound manipulation
+  - Atmospheric textures and pads
+  - Rhythmic granular sequences
+  - Experimental sound manipulation

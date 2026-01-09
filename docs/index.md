@@ -22,4 +22,9 @@ For support and donations: [PayPal.Me/tsugumasa320](https://paypal.me/tsugumasa3
 
 These plugins are available through the VCV Rack Library or can be built from source code.
 
-Visit our [GitHub repository](https://github.com/tsugumasa320/Ambivalent-Instruments) for source code and development information.
+## Feedback Welcome!
+
+This project is currently published on VCV Rack as an experimental environment, with the goal of eventually releasing it as a hardware product. Feedback is always welcome.
+
+Contact: tsugumasa320 [at] gmail [dot] com
+X: https://x.com/tsugumasa320
