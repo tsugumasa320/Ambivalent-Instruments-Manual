@@ -56,45 +56,43 @@ https://tsugumasa320.gumroad.com/l/grainer
     - quantize = 0の場合: ピッチが滑らかで連続的に変化
     - quantize = 1の場合: ピッチが離散的なステップでジャンプし、より顕著なピッチ遷移を作成
     - 中間値では滑らかな動作とステップ状動作がブレンド
-- **Window Shape**: Hann窓形状の左右偏り (-1〜+1)
-  - **-1**: 左偏りの窓形状
-  - **0**: 対称Hann窓（中央位置）
-  - **+1**: 右偏りの窓形状
-- **Position Random**: 位置のランダム量 (0-1)
-- **Input Gain**: 入力ゲイン (0-1、リニア)
-  - **0%**: 入力信号なし
-  - **100%**: フル入力ゲイン
-- **Dry/Wet**: 原音と処理音の比率 (0-1)
-  - **0%**: 100%ドライ（原音のみ）
-  - **100%**: 100%ウェット（処理音のみ）
-- **Reverb**: 内蔵リバーブ量 (0-1) - Mutable Instruments Cloudsのリバーブ実装をベース
-  - **0%**: リバーブなし
-  - **100%**: 最大リバーブエフェクト
-- **Forward/Reverse**: 再生方向の切替 (ボタン)
-  - **Forward**: 通常再生方向 (デフォルト)
-  - **Reverse**: 逆再生方向
-- **Freeze**: バッファのフリーズ (ボタン/CVゲート)
-  - **GUI表示**: アクティブ時にボタンが点灯
-  - **オフ**: 通常録音モード（バッファが継続的に更新）
-  - **オン**: バッファ内容がフリーズ（新しい録音なし、既存内容を保持）
+  - **Window Shape**: Hann窓形状の左右偏り (-1〜+1)
+    - **-1**: 左偏りの窓形状
+    - **0**: 対称Hann窓（中央位置）
+    - **+1**: 右偏りの窓形状
+  - **Position Random**: 位置のランダム量 (0-1)
+  - **Input Gain**: 入力ゲイン (0-1、リニア)
+    - **0%**: 入力信号なし
+    - **100%**: フル入力ゲイン
+  - **Dry/Wet**: 原音と処理音の比率 (0-1)
+    - **0%**: 100%ドライ（原音のみ）
+    - **100%**: 100%ウェット（処理音のみ）
+  - **Reverb**: 内蔵リバーブ量 (0-1) - Mutable Instruments Cloudsのリバーブ実装をベース
+    - **0%**: リバーブなし
+    - **100%**: 最大リバーブエフェクト
+  - **Forward/Reverse**: 再生方向の切替 (ボタン)
+    - **Forward**: 通常再生方向 (デフォルト)
+    - **Reverse**: 逆再生方向
+  - **Freeze**: バッファのフリーズ (ボタン/CVゲート)
+    - **GUI表示**: アクティブ時にボタンが点灯
+    - **オフ**: 通常録音モード（バッファが継続的に更新）
+    - **オン**: バッファ内容がフリーズ（新しい録音なし、既存内容を保持）
 
 ### CV入力
-
 主要パラメータはCV対応（±5Vバイポーラ）:
-- Grain Length CV
-- Density CV
-- Pitch CV（コンテキストメニューで1V/oct切替）
-- Pitch Random CV
-- Position CV
-- Position Random CV
-- Stereo Spread CV
-- Input Gain CV
-- Dry/Wet CV
-- Reverb CV
-- Window Shape CV
+  - Grain Length CV
+  - Density CV
+  - Pitch CV（コンテキストメニューで1V/oct切替）
+  - Pitch Random CV
+  - Position CV
+  - Position Random CV
+  - Stereo Spread CV
+  - Input Gain CV
+  - Dry/Wet CV
+  - Reverb CV
+  - Window Shape CV
 
 ## 応用例
-
-- アンビエントの質感生成
-- リズミックなグラニュラーリピート
-- 実験的なサウンド加工
+  - アンビエントの質感生成
+  - リズミックなグラニュラーリピート
+  - 実験的なサウンド加工
