@@ -23,7 +23,7 @@ https://tsugumasa320.gumroad.com/l/grainer
 
 ## パラメータ
 
-### 基本コントロール
+#### 基本コントロール
 
 - **Grain Length**: グレイン長 (50ms - 1000ms、デフォルト525ms)
 - **Density**: グレイン生成レート (表示 0 - 50Hz)
@@ -78,7 +78,7 @@ https://tsugumasa320.gumroad.com/l/grainer
     - **オフ**: 通常録音モード（バッファが継続的に更新）
     - **オン**: バッファ内容がフリーズ（新しい録音なし、既存内容を保持）
 
-### CV入力
+## CV入力
 主要パラメータはCV対応（±5Vバイポーラ）:
   - Grain Length CV
   - Density CV

@@ -77,7 +77,7 @@ The built-in reverb is based on the high-quality implementation from Mutable Ins
     - **Off**: Normal recording mode (buffer continuously updates)
     - **On**: Buffer content frozen (no new recording, existing content preserved)
 
-### CV Inputs
+## CV Inputs
 
 Core parameters support CV modulation (±5V bipolar):
   - Grain Length CV
