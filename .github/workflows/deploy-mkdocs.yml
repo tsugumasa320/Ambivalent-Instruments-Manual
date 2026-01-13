@@ -3,8 +3,6 @@ name: Build and Deploy MkDocs Documentation
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
   workflow_dispatch:
 
 permissions:
@@ -14,7 +12,7 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true  # Cancel previous deployments to avoid queue buildup
 
 jobs:
   build-and-deploy:
@@ -53,3 +51,7 @@ jobs:
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
+      with:
+        timeout: 300000  # 5 minutes instead of 10
+        error_count: 5   # Reduce retry count
+        reporting_interval: 10000  # Report every 10 seconds
