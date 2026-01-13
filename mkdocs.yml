@@ -1,5 +1,5 @@
 site_name: Ambivalent Instruments
-site_description: VCV Rack plugin documentation (Grainer + EQ8)
+site_description: VCV Rack plugin documentation (Grainer + EQ8 + XFMN-01)
 site_url: https://tsugumasa320.github.io/Ambivalent-Instruments-Manual/
 
 # Repository
@@ -8,7 +8,38 @@ repo_url: https://github.com/tsugumasa320/Ambivalent-Instruments-Manual
 
 # Configuration
 theme:
-  name: dracula
+  name: material
+  palette:
+    # Light mode (similar to Mutable Instruments clean look)
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.highlight
+    - search.share
+    - content.code.copy
+  icon:
+    repo: fontawesome/brands/github
 
 # Navigation
 nav:
@@ -21,6 +52,10 @@ nav:
     - Overview: eq8/index.md  
     - Manual (English): eq8/manual.md
     - Manual (日本語): eq8/manual_jp.md
+  - XFMN-01:
+    - Overview: xfmn01/index.md
+    - Manual (English): xfmn01/manual.md
+    - Manual (日本語): xfmn01/manual_jp.md
   - Changelog: changelog.md
 
 # Markdown extensions
