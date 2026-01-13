@@ -78,19 +78,6 @@ https://tsugumasa320.gumroad.com/l/grainer
     - **オフ**: 通常録音モード（バッファが継続的に更新）
     - **オン**: バッファ内容がフリーズ（新しい録音なし、既存内容を保持）
 
-## CV入力
-主要パラメータはCV対応（±5Vバイポーラ）:
-  - Grain Length CV
-  - Density CV
-  - Pitch CV（コンテキストメニューで1V/oct切替）
-  - Pitch Random CV
-  - Position CV
-  - Position Random CV
-  - Stereo Spread CV
-  - Input Gain CV
-  - Dry/Wet CV
-  - Reverb CV
-  - Window Shape CV
 
 ## 応用例
   - アンビエントの質感生成
