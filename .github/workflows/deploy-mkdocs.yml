@@ -11,6 +11,7 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: true  # Cancel previous deployments to avoid queue buildup
+  # Deployed to gh-pages branch
 
 jobs:
   build-and-deploy:
