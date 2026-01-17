@@ -49,13 +49,21 @@ nav:
     - Manual (English): grainer/manual.md
     - Manual (日本語): grainer/manual_jp.md
   - EQ8:
-    - Overview: eq8/index.md  
+    - Overview: eq8/index.md
     - Manual (English): eq8/manual.md
     - Manual (日本語): eq8/manual_jp.md
   - XFMN-01:
     - Overview: xfmn01/index.md
     - Manual (English): xfmn01/manual.md
     - Manual (日本語): xfmn01/manual_jp.md
+  - Modulo:
+    - Overview: modulo/index.md
+    - Manual (English): modulo/manual.md
+    - Manual (日本語): modulo/manual_jp.md
+  - Group-Delay:
+    - Overview: group-delay/index.md
+    - Manual (English): group-delay/manual.md
+    - Manual (日本語): group-delay/manual_jp.md
   - Changelog: changelog.md
 
 # Markdown extensions
