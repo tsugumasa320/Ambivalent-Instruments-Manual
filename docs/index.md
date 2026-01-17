@@ -23,7 +23,7 @@ Cross-FM noise synthesizer with advanced modulation capabilities.
 - [日本語マニュアル](xfmn01/manual_jp.md)
 
 ### [Delay](delay/index.md)
-Professional stereo delay engine with Classic, Ping-pong, Analog, and Reverse modes.
+Professional stereo delay engine with Repitch, Fade, Reverse, and Ping-pong modes, inspired by Ableton Live.
 
 - [English Manual](delay/manual.md)
 - [日本語マニュアル](delay/manual_jp.md)
