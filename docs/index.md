@@ -16,11 +16,23 @@ Professional 8-band stereo parametric equalizer optimized for music production.
 - [English Manual](eq8/manual.md)
 - [日本語マニュアル](eq8/manual_jp.md)
 
-### [XFMN-01](xfmn01/index.md)
+ ### [XFMN-01](xfmn01/index.md)
 Cross-FM noise synthesizer with advanced modulation capabilities.
 
 - [English Manual](xfmn01/manual.md)
 - [日本語マニュアル](xfmn01/manual_jp.md)
+
+### [Modulo](modulo/index.md)
+Modulo operator utility module with fixed gain scaling and dry/wet mixing.
+
+- [English Manual](modulo/manual.md)
+- [日本語マニュアル](modulo/manual_jp.md)
+
+### [GroupDelay](group-delay/index.md)
+Group delay effect using cascaded all-pass filters for transient shaping and phase dispersion.
+
+- [English Manual](group-delay/manual.md)
+- [日本語マニュアル](group-delay/manual_jp.md)
 
 ## Support
 
