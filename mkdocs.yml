@@ -56,6 +56,10 @@ nav:
     - Overview: xfmn01/index.md
     - Manual (English): xfmn01/manual.md
     - Manual (日本語): xfmn01/manual_jp.md
+  - Delay:
+    - Overview: delay/index.md
+    - Manual (English): delay/manual.md
+    - Manual (日本語): delay/manual_jp.md
   - Modulo:
     - Overview: modulo/index.md
     - Manual (English): modulo/manual.md

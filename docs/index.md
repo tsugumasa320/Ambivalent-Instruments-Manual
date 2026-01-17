@@ -22,6 +22,12 @@ Cross-FM noise synthesizer with advanced modulation capabilities.
 - [English Manual](xfmn01/manual.md)
 - [日本語マニュアル](xfmn01/manual_jp.md)
 
+### [Delay](delay/index.md)
+Professional stereo delay engine with Classic, Ping-pong, Analog, and Reverse modes.
+
+- [English Manual](delay/manual.md)
+- [日本語マニュアル](delay/manual_jp.md)
+
 ### [Modulo](modulo/index.md)
 Modulo operator utility module with fixed gain scaling and dry/wet mixing.
 
