@@ -96,7 +96,22 @@ Multiple safeguards ensure stable group delay operation:
 - **Medium risk**: AMOUNT = 16~24 stages (stronger effect, moderate stability)
 - **High risk**: AMOUNT = 24~32 stages (maximum effect, caution with LFO)
 
-For LFO modulation of FREQ, the IIR filter passes only low frequencies. Use LFO rates in the **0.1~5Hz range** for best results.
+### ⚠️ Frequency Modulation Warning
+
+**Excessive modulation of the FREQ parameter can cause the filter to self-oscillate.** Follow these guidelines:
+
+**Safe Frequency Modulation**:
+- **LFO frequency**: Keep within 0.1~5Hz range (IIR filter removes high-frequency jitter)
+- **Modulation speed**: Use gradual, smooth changes
+- **CV attenuation**: Avoid excessive modulation depth (use CV attenuator)
+
+**If Oscillation Occurs**:
+1. **Fix FREQ**: Disconnect CV input, set to fixed value via knob
+2. **Reduce AMOUNT**: Decrease to 16 stages or lower
+3. **Decrease CV amplitude**: Attenuate LFO output level
+4. **Slow LFO rate**: Use 0.1~1Hz for slow, gentle modulation
+
+**Critical**: Using AMOUNT = 24~32 stages with fast CV modulation (>5Hz) significantly increases oscillation risk.
 
 ## Applications
 
