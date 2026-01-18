@@ -50,11 +50,53 @@ GroupDelay uses cascaded all-pass filters to create frequency-dependent phase de
 ## Signal Processing Flow
 
 1. Input signal reading
-2. All-pass filter chain processing
+2. **CV Pre-processing** (2025 enhancement)
+   - IIR low-pass filter applied to frequency CV input (~2Hz cutoff)
+   - Low-frequency LFO modulation passes through, high-frequency jitter removed
+   - Oscillation and artifact prevention
+3. All-pass filter chain processing
    - Specified number of stages in cascade
    - Fractional values use equal-power blending
-3. Soft clipping (±5V range)
-4. Output level LED for visual feedback
+   - **Gradual Parameter Updates** (2025 enhancement)
+     - 2 filters updated per frame with frequency/Q
+     - All 32 filters updated over 16 frames
+     - Distributed parameter change impact reduces oscillation
+4. Soft clipping (±5V range)
+5. Output level LED for visual feedback
+
+## Stability Measures (2025 Enhancement)
+
+Multiple safeguards ensure stable group delay operation:
+
+### Numerical Safety
+- **Double-precision filter computation**: All filter coefficients managed in 64-bit precision
+- **Quantization noise reduction**: Minimized numerical errors during 32-stage cascade
+
+### Oscillation Prevention
+1. **IIR LFO Filter** (~2Hz cutoff)
+   - Removes high-frequency jitter from CV inputs
+   - Passes LFO signals (0.1-10Hz), removes noise
+
+2. **Gradual Parameter Updates**
+   - 2 filters updated per frame
+   - Parameter changes distributed over 16 frames
+   - Reduces coefficient update shock
+
+3. **Fast Coefficient Smoothing**
+   - Update rate: 0.5% per sample
+   - ~180ms @ 44.1kHz to reach target value
+   - Prevents clicks and artifacts
+
+4. **Auto-reset on anomalies**
+   - Detects NaN/Inf output and auto-resets
+   - Prevents error propagation
+
+### Recommended Settings
+- **Low risk**: AMOUNT = 8~16 stages (maintains effect, improved stability)
+- **Medium risk**: AMOUNT = 16~24 stages (stronger effect, moderate stability)
+- **High risk**: AMOUNT = 24~32 stages (maximum effect, caution with LFO)
+
+For LFO modulation of FREQ, the IIR filter passes only low frequencies. Use LFO rates in the **0.1~5Hz range** for best results.
 
 ## Applications
 
@@ -63,3 +105,4 @@ GroupDelay uses cascaded all-pass filters to create frequency-dependent phase de
 - Effect fine-tuning
 - Creative spatial effects
 - Phase manipulation
+- Dynamic spatial effects with LFO modulation
