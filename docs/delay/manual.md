@@ -118,6 +118,10 @@ Right-click on the module to access Transition Mode options. These control how t
 - Creates unique, backwards echo effects
 - Ideal for ambient and experimental sounds
 - Can create psychedelic textures
+- **Improvements (v2.0.5)**:
+  - Reduced click noise at short delay times (<0.1s)
+  - Stable reverse playback quality with continuous mode
+  - 16kHz anti-aliasing filter removes high-frequency artifacts
 
 ### Ping-Pong Mode
 - Delay alternates between left and right channels
@@ -199,6 +203,7 @@ The TIME knob displays delay time in seconds (0.010s to 5.000s). This makes it e
 - **Delay Modes**: Repitch, Fade, Reverse, Ping-pong
 - **Transition Modes**: Repitch, Fade, Jump (via context menu)
 - **Interpolation**: 3rd-order Lagrange
+- **Anti-Aliasing**: 16kHz lowpass filter (applied to all modes)
 - **Max Feedback**: 95% (prevents infinite loops)
 - **CV Input Range**: ±10V
 - **Delay Time Range**: 0.010s to 5.000s
@@ -213,3 +218,5 @@ The TIME knob displays delay time in seconds (0.010s to 5.000s). This makes it e
 - Long delay times at high sample rates may use more memory
 - Time display shows actual delay time in seconds
 - Sync/Clock/Tap functionality has been removed
+- **v2.0.5 Update**: Anti-aliasing filter added to all modes to reduce interpolation artifacts
+- **v2.0.5 Update**: Reverse mode click noise reduced and stability improved
