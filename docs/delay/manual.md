@@ -1,6 +1,6 @@
 # Delay - Stereo Delay Module
 
-Professional stereo delay engine with multiple delay modes including Repitch, Fade, Reverse, and Ping-pong. Features 3rd-order Lagrange interpolation for high-quality audio processing, inspired by Ableton Live.
+Professional stereo delay engine with multiple delay modes including Repitch, Fade, Reverse, and Ping-pong. Features Hermite interpolation for high-quality audio processing, inspired by Ableton Live.
 
 ## Overview
 
@@ -20,10 +20,11 @@ Delay is a professional-grade stereo delay effect module offering four distinct 
 ### Main Controls
 
 **TIME** (0.0〜1.0, default 0.5)
-- Delay time control (displayed in seconds: 0.010s to 5.000s)
+- Delay time control (displayed in seconds: 0.001s to 5.000s)
 - Exponential curve for musical response
+  - 12 o'clock position (50%) = 2.5 seconds
+  - Range: 1ms to 5 seconds
 - CV input supported
-- Range: 10ms to 5 seconds
 
 **FEEDBACK** (0.0〜0.95, default 0.5)
 - Feedback amount for delay repetitions
@@ -77,9 +78,11 @@ Right-click on the module to access Transition Mode options. These control how t
 
 ### Fade Transition (Default)
 - Smooth crossfade between old and new delay times
-- No pitch changes
+- No pitch changes - uses multi-voice crossfade system
+- Each voice reads at fixed delay time, transitions handled via crossfade
+- 600ms crossfade time for artifact-free transitions
 - Clean, professional sound
-- Inspired by Ableton Live
+- Inspired by Ableton Live Fade Delay
 
 ### Jump Transition
 - Immediate jump to new delay time
