@@ -2,6 +2,8 @@
 
 Professional VCV Rack plugins for music production and sound design.
 
+**Note: Current manuals are AI-generated and will be updated progressively.**
+
 ## Plugins
 
 ### [Grainer](grainer/index.md)
@@ -51,6 +53,8 @@ These plugins are available through the VCV Rack Library or can be built from so
 ## Feedback Welcome!
 
 This project is currently published on VCV Rack as an experimental environment, with the goal of eventually releasing it as a hardware product. Feedback is always welcome.
+
+**If you create performance videos or sound demos using these modules, please let us know! We'd love to feature them on our website.**
 
 Contact: tsugumasa320 [at] gmail [dot] com
 
