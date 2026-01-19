@@ -1,5 +1,7 @@
 # XFMN-01 - Cross-FM Noise Synthesizer
 
+**Note: This manual is AI-generated and will be updated progressively.**
+
 Cross-FM noise synthesizer with advanced modulation capabilities for VCV Rack
 
 ## Overview

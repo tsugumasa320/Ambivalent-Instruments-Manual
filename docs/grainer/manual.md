@@ -1,5 +1,7 @@
 # Grainer - Granular Synthesis Processor
 
+**Note: This manual is AI-generated and will be updated progressively.**
+
 Real-time granular synthesis plugin for VCV Rack.
 
 ## Overview

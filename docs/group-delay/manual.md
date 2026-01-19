@@ -1,5 +1,7 @@
 # GroupDelay - All-Pass Disperser
 
+**Note: This manual is AI-generated and will be updated progressively.**
+
 Group delay effect using cascaded all-pass filters for transient shaping and phase dispersion.
 
 ## Overview

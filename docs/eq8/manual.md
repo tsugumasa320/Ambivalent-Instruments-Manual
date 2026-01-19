@@ -1,5 +1,7 @@
 # EQ8 - 8-Band Parametric Equalizer
 
+**Note: This manual is AI-generated and will be updated progressively.**
+
 8-band stereo parametric equalizer optimized for music production.
 
 ## Overview

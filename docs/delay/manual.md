@@ -1,5 +1,7 @@
 # Delay - Stereo Delay Module
 
+**Note: This manual is AI-generated and will be updated progressively.**
+
 Professional stereo delay engine with multiple delay modes including Repitch, Fade, Reverse, and Ping-pong. Features Hermite interpolation for high-quality audio processing, inspired by Ableton Live.
 
 ## Overview

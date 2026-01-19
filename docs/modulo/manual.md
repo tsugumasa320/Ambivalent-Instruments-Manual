@@ -1,5 +1,7 @@
 # Modulo - Modulo Operator Utility Module
 
+**Note: This manual is AI-generated and will be updated progressively.**
+
 Modulo operator utility module with fixed gain scaling and dry/wet mixing.
 
 ## Overview
