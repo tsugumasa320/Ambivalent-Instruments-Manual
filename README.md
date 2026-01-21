@@ -1,9 +1,5 @@
 # Ambivalent Instruments - User Manual
 
-Professional VCV Rack plugins documentation.
-
-## Plugins
-
 ### [Grainer](grainer/)
 Real-time granular synthesis processor with multi-grain engine and advanced modulation.
 - [English Manual](grainer/manual/)
@@ -19,9 +15,3 @@ Professional 8-band stereo parametric equalizer optimized for music production.
 ## Support
 
 For support and donations: [PayPal.Me/tsugumasa320](https://paypal.me/tsugumasa320)
-
-## Installation
-
-These plugins are available through the VCV Rack Library or can be built from source code.
-
-Visit our [GitHub repository](https://github.com/tsugumasa320/Ambivalent-Instruments) for source code and development information.

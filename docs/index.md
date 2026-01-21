@@ -1,10 +1,6 @@
 # Ambivalent Instruments
 
-Professional VCV Rack plugins for music production and sound design.
-
 **Note: Current manuals are AI-generated and will be updated progressively.**
-
-## Plugins
 
 ### [Grainer](grainer/index.md)
 Real-time granular synthesis processor with multi-grain engine and advanced modulation.
