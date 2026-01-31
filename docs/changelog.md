@@ -1,29 +1,29 @@
 # Changelog - Ambivalent Instruments
 
-## [2.0.6] - 2026-01-31
+## [2.0.1] - 2026-01-31
 
 ### Delay Module
 
 #### Added
-- **Octave Mode**: New delay mode with granular pitch shifting
-  - Smooth pitch interval transitions without artifacts
-  - Based on Clouds-style granular resampling
+- **Octave Mode**: New delay mode replacing Fade mode
+  - Granular pitch shifting for smooth pitch interval transitions
+  - Based on Clouds-style resampling
+  - No artifacts during transitions
 - **DelayExpander Module**: Extended CV control for Delay module
   - CV inputs for Time, Feedback, Mix parameters
   - LED indicators for parameter values
 
 #### Changed
 - Replaced Fade mode with Octave mode
-- Improved pitch shifting quality with double-buffer implementation
 
 ### All Modules
 
 #### Added
-- **Bypass Support**: All modules with audio input now support bypass
+- **Bypass Support**: All modules with audio input can be bypassed
   - Right-click menu "Bypass" option
   - Audio passes through unprocessed when bypassed
-- **Polyphonic Input Support**: All modules now properly handle polyphonic inputs
-  - All polyphonic channels summed to mono output
+- **Polyphonic Input Support**: All modules now handle polyphonic inputs correctly
+  - All polyphonic channels are summed to mono output
 
 ### Grainer Module
 
@@ -35,42 +35,41 @@
 
 ---
 
-## [2.0.5] - 2025-01-19
+## [2.0.0] - 2025-01-19
 
-### Delay Module
+### Initial Release
 
-#### Added
-- Anti-aliasing filter (16kHz lowpass) applied to all delay modes
-- Improved Reverse mode with reduced click noise at short delay times (<0.1s)
-- State persistence for mode settings (survives VCV Rack restart)
+#### Modules Included
+- **Delay** - Digital delay with 4 modes (Repitch/Octave/Reverse/Ping-pong)
+- **Grainer** - Real-time granular synthesis processor
+- **EQ8** - 8-band stereo parametric equalizer
+- **XFMN01** - Cross-FM noise synthesizer
+- **Modulo** - Modulo operator effect/utility
+- **GroupDelay** - Group delay effect using cascaded all-pass filters
 
-#### Changed
-- Reverse mode simplified to continuous mode only (removed double-buffer mode)
-- Improved crossfade length adjustment for short delay times
+#### Delay Module Features
+- **4 Delay Modes**:
+  - Repitch: Pitch changes when delay time is modulated
+  - Octave: Granular pitch shifting with smooth transitions
+  - Reverse: Reverse playback delay
+  - Ping-pong: Left-right alternating delay
+- **High-Quality DSP**:
+  - Hermite interpolation for smooth sample reading
+  - Granular pitch shifting in Octave mode
+- **Controls**:
+  - Time: 1ms to 5 seconds (12 o'clock = 2.5 seconds)
+  - Feedback with cross-channel routing
+  - Dry/Wet mix control
+  - Mode selection
+- **CV Inputs**: Time, Feedback, Mix modulation
 
-#### Fixed
-- Click noise in Reverse mode at block boundaries
-- High-frequency artifacts from interpolation in all modes
+#### Grainer Module Features
+- Granular synthesis with pitch quantization
+- LED blinking based on harmonic score
+- Advanced randomization controls
 
-#### Removed
-- Unused code cleanup: processAnalogMode, analogEngine members (148 lines)
-- Unused QualityMode enum and related methods
-- Unused AdvancedFeedback processor methods
-
-### Grainer Module
-
-#### Added
-- Pitch Quantize LED blinking feature based on harmonic score
-- Low harmony intervals blink faster, high harmony stays lit
-
----
-
-## [2.0.4] - Previous Release
-
-### Modulo Module
-
-#### Changed
-- Gain default value changed from 2.0 to 1.0
-- Gain range changed from 0-4 to 0-2
-
----
+#### Technical Highlights
+- Clean, professional audio quality
+- Low CPU usage
+- Stereo processing throughout
+- CV modulation support
