@@ -1,5 +1,40 @@
 # Changelog - Ambivalent Instruments
 
+## [2.0.6] - 2026-01-31
+
+### Delay Module
+
+#### Added
+- **Octave Mode**: New delay mode with granular pitch shifting
+  - Smooth pitch interval transitions without artifacts
+  - Based on Clouds-style granular resampling
+- **DelayExpander Module**: Extended CV control for Delay module
+  - CV inputs for Time, Feedback, Mix parameters
+  - LED indicators for parameter values
+
+#### Changed
+- Replaced Fade mode with Octave mode
+- Improved pitch shifting quality with double-buffer implementation
+
+### All Modules
+
+#### Added
+- **Bypass Support**: All modules with audio input now support bypass
+  - Right-click menu "Bypass" option
+  - Audio passes through unprocessed when bypassed
+- **Polyphonic Input Support**: All modules now properly handle polyphonic inputs
+  - All polyphonic channels summed to mono output
+
+### Grainer Module
+
+#### Added
+- **Waveform Display Numerical Values**
+  - Quant value displayed when adjusted
+  - Pitch value displayed when adjusted
+  - Real-time visual feedback
+
+---
+
 ## [2.0.5] - 2025-01-19
 
 ### Delay Module
