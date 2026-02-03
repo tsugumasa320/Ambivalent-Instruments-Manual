@@ -1,5 +1,26 @@
 # Changelog - Ambivalent Instruments
 
+## [2.0.2] - 2026-02-04
+
+### Delay Module
+
+#### Changed
+- **Smoother mode switching**: Reduced clicks when changing delay modes
+- **Reverse playback refinement**: Cleaner reverse repeats and time changes
+- **Modulation updates**:
+  - Reverse mode adds chorus-style movement
+  - Octave mode uses tremolo-style movement
+
+#### Fixed
+- **DelayExpander clock**: Stable clock pulses at very short delay times
+
+### Grainer Module
+
+#### Fixed
+- **Startup stability**: Fixed a crash on startup/exit
+
+---
+
 ## [2.0.1] - 2026-01-31
 
 ### Delay Module
