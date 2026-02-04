@@ -11,13 +11,27 @@
   - Reverse mode adds chorus-style movement
   - Octave mode uses tremolo-style movement
 
+#### Improved
+- **Mode button tooltip**: Shows MOD knob behavior for each mode
+
 #### Fixed
 - **DelayExpander clock**: Stable clock pulses at very short delay times
 
 ### Grainer Module
 
+#### Added
+- **Freeze buffer persistence**: Frozen sample buffer is now saved with your patch and restored on reload
+
+#### Improved
+- **Parameter tooltips**: Hover over knobs to see descriptions
+
 #### Fixed
 - **Startup stability**: Fixed a crash on startup/exit
+
+### Modulo Module
+
+#### Improved
+- **Parameter tooltip**: Modulo Value knob shows formula
 
 ---
 
