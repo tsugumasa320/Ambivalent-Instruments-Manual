@@ -1,50 +1,73 @@
 # EQ8 - 8-Band Parametric Equalizer
 
-**Note: This manual is AI-generated and will be updated progressively.**
-
-8-band stereo parametric equalizer optimized for music production.
+Stereo EQ with 8 fixed frequency bands.
 
 ## Overview
 
-EQ8 is an 8-band parametric equalizer optimized for music production. Each band provides precise ±12dB gain control, with Butterworth characteristics (Q=0.707) and master gain from -70dB to +6dB.
-
-## Quick Start
-
-1. Add EQ8 to your VCV Rack patch
-2. Connect audio inputs and outputs
-3. Adjust individual band gains to shape your sound
-4. Use master gain for overall level control
+Fixed bands from 60Hz to 12kHz. Each band offers ±12dB gain, with master gain from -70dB to +6dB.
 
 ## Parameters
 
-### Band Gains
+**MASTER GAIN** (-70dB to +6dB, default 0dB)
+- Overall gain
+- **Examples**:
+  - **Value = -70dB**: Near silent
+  - **Value = +6dB**: 6dB boost
 
-- **8 independent frequency bands**
-- ±12dB range per band
-- Q=0.707 (Butterworth characteristics)
-- Center position: 0dB (unity gain)
-- Smooth continuous adjustment
+**BAND1 (60Hz)** (-12dB to +12dB, default 0dB)
+- Low shelf
+- **Examples**:
+  - **Value = -12dB**: Cut
+  - **Value = +12dB**: Boost
 
-### Master Gain
+**BAND2 (170Hz)** (-12dB to +12dB, default 0dB)
+- **Examples**:
+  - **Value = -12dB**: Cut
+  - **Value = +12dB**: Boost
 
-- **Range**: -70dB to +6dB
-- **Center**: 0dB (unity gain)
-- Smooth continuous adjustment
+**BAND3 (310Hz)** (-12dB to +12dB, default 0dB)
+- **Examples**:
+  - **Value = -12dB**: Cut
+  - **Value = +12dB**: Boost
 
-## Technical Specifications
+**BAND4 (600Hz)** (-12dB to +12dB, default 0dB)
+- **Examples**:
+  - **Value = -12dB**: Cut
+  - **Value = +12dB**: Boost
 
-- **Bands**: 8 fixed frequency bands
-- **Gain Range**: ±12dB per band, master -70dB to +6dB
-- **Type**: Low shelf, 12kHz high shelf, 6 peaking bands
-- **Q Factor**: 0.707 (Butterworth characteristics)
-- **Phase Response**: Minimized for natural sound
-- **Processing**: Real-time, zero-latency
-- **Channels**: Stereo independent processing
-- **Sample Rate**: All VCV Rack sample rates supported
+**BAND5 (1kHz)** (-12dB to +12dB, default 0dB)
+- **Examples**:
+  - **Value = -12dB**: Cut
+  - **Value = +12dB**: Boost
 
-## Applications
+**BAND6 (3kHz)** (-12dB to +12dB, default 0dB)
+- **Examples**:
+  - **Value = -12dB**: Cut
+  - **Value = +12dB**: Boost
 
-- Mixing and mastering
-- Room tone correction
-- Tone shaping for instruments
-- Overall spectral balance control
+**BAND7 (6kHz)** (-12dB to +12dB, default 0dB)
+- **Examples**:
+  - **Value = -12dB**: Cut
+  - **Value = +12dB**: Boost
+
+**BAND8 (12kHz)** (-12dB to +12dB, default 0dB)
+- High shelf
+- **Examples**:
+  - **Value = -12dB**: Cut
+  - **Value = +12dB**: Boost
+
+## I/O / CV
+
+- **Audio In**: L/R
+- **Audio Out**: L/R
+- **CV In**: None
+
+## Context Menu
+
+- Reset All Bands
+- Flat Response
+- Smile Curve
+- Bass Boost
+- Presence Boost
+- Vocal EQ
+- Soft Clip Outputs (ON/OFF)
