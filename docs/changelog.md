@@ -1,5 +1,37 @@
 # Changelog - Ambivalent Instruments
 
+## [2.0.3] - 2026-02-08
+
+### New Modules
+
+#### Added
+- **Cheby**: Chebyshev harmonic generator added to the unified plugin
+- **Seq8**: 8-step CV/Gate sequencer added to the unified plugin
+
+### Seq8 Module
+
+#### Fixed
+- **Fast sync stability**: x2/x4 external sync freeze at high clock rates is fixed
+- **Reset/sync priority**: RESET now takes priority when RESET and SYNC arrive on the same sample
+
+#### Improved
+- **Tempo LED behavior**: Low base brightness + pulse overlay for better sync-change visibility
+
+### Cheby Module
+
+#### Added
+- **Soft clip option**: Context-menu toggle `Soft Clip Outputs`
+
+#### Changed
+- **Soft clip curve**: Output soft clip uses Mutable-style transfer (`ambivalent::dsp::softLimit`)
+
+### Soft Clip Defaults
+
+#### Changed
+- **Default OFF policy**: Soft clip default is OFF across modules; Grainer initial state is aligned to OFF
+
+---
+
 ## [2.0.2] - 2026-02-04
 
 ### Delay Module

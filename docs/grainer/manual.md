@@ -39,6 +39,18 @@ Grainer processes incoming audio with up to 128 grains and a 5-second buffer. Pi
   - **Value = 0.0**: Free pitch
   - **Value = 0.5**: Partial snapping (e.g. 1.0x/1.5x/2.0x)
   - **Value = 1.0**: Strong ratio snapping
+- **Interval guide (upward direction)**:
+
+| Quant value (`q`) | Common upward ratios | Semitones (approx.) | Interval feel (rough) |
+|---|---|---:|---|
+| `1.0` | `2.0x`, `3.0x` | `+12.00`, `+19.02` | Octave / Octave + perfect fifth |
+| `0.5` | `1.5x`, `2.0x`, `2.5x`, `3.0x` | `+7.02`, `+12.00`, `+15.86`, `+19.02` | Perfect fifth to octave+fifth range |
+| around `0.333` | `1.333x`, `1.666x`, `2.0x`, `2.666x` | `+4.98`, `+8.84`, `+12.00`, `+16.98` | Perfect fourth / near minor seventh / octave / near 11th |
+| `0.25` | `1.25x`, `1.5x`, `1.75x`, `2.0x` | `+3.86`, `+7.02`, `+9.69`, `+12.00` | Near major third / fifth / near major sixth / octave |
+
+- **Notes**:
+  - Internally this is step quantization: `ratio = floor(rawRatio / q) * q` (not fixed semitone quantization).
+  - Semitone conversion uses `12 * log2(ratio)`.
 
 **WINDOW SHAPE** (-1.0–1.0, default 0.0)
 - Hann window bias
