@@ -1,5 +1,5 @@
 site_name: Ambivalent Instruments
-site_description: VCV Rack plugin documentation (Grainer + EQ8 + XFMN-01)
+site_description: VCV Rack plugin documentation for Ambivalent Instruments
 site_url: https://tsugumasa320.github.io/Ambivalent-Instruments-Manual/
 
 # Repository
@@ -60,6 +60,10 @@ nav:
     - Overview: delay/index.md
     - Manual (English): delay/manual.md
     - Manual (日本語): delay/manual_jp.md
+  - Delay Expander:
+    - Overview: delay-expander/index.md
+    - Manual (English): delay-expander/manual.md
+    - Manual (日本語): delay-expander/manual_jp.md
   - Modulo:
     - Overview: modulo/index.md
     - Manual (English): modulo/manual.md
@@ -68,6 +72,18 @@ nav:
     - Overview: group-delay/index.md
     - Manual (English): group-delay/manual.md
     - Manual (日本語): group-delay/manual_jp.md
+  - AutoPanTremolo:
+    - Overview: autopan-tremolo/index.md
+    - Manual (English): autopan-tremolo/manual.md
+    - Manual (日本語): autopan-tremolo/manual_jp.md
+  - Cheby:
+    - Overview: cheby/index.md
+    - Manual (English): cheby/manual.md
+    - Manual (日本語): cheby/manual_jp.md
+  - Seq8:
+    - Overview: seq8/index.md
+    - Manual (English): seq8/manual.md
+    - Manual (日本語): seq8/manual_jp.md
   - Changelog: changelog.md
 
 # Markdown extensions

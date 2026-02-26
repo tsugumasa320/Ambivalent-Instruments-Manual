@@ -1,7 +1,5 @@
 # Ambivalent Instruments
 
-**Note: Current manuals are AI-generated and will be updated progressively.**
-
 ### [Grainer](grainer/index.md)
 Real-time granular synthesis processor with multi-grain engine and advanced modulation.
 
@@ -21,10 +19,16 @@ Cross-FM noise synthesizer with advanced modulation capabilities.
 - [日本語マニュアル](xfmn01/manual_jp.md)
 
 ### [Delay](delay/index.md)
-Professional stereo delay engine with Repitch, Fade, Reverse, and Ping-pong modes, inspired by Ableton Live.
+Professional stereo delay engine with Repitch/Octave/Reverse/Ping-Pong modes.
 
 - [English Manual](delay/manual.md)
 - [日本語マニュアル](delay/manual_jp.md)
+
+### [Delay Expander](delay-expander/index.md)
+Tap tempo and sync expander for the Delay module.
+
+- [English Manual](delay-expander/manual.md)
+- [日本語マニュアル](delay-expander/manual_jp.md)
 
 ### [Modulo](modulo/index.md)
 Modulo operator utility module with fixed gain scaling and dry/wet mixing.
@@ -37,6 +41,24 @@ Group delay effect using cascaded all-pass filters for transient shaping and pha
 
 - [English Manual](group-delay/manual.md)
 - [日本語マニュアル](group-delay/manual_jp.md)
+
+### [AutoPanTremolo](autopan-tremolo/index.md)
+Stereo auto-pan and tremolo effect with adjustable LFO curve and sync.
+
+- [English Manual](autopan-tremolo/manual.md)
+- [日本語マニュアル](autopan-tremolo/manual_jp.md)
+
+### [Cheby](cheby/index.md)
+Chebyshev harmonic generator with H1-H8 sliders for rich harmonic shaping.
+
+- [English Manual](cheby/manual.md)
+- [日本語マニュアル](cheby/manual_jp.md)
+
+### [Seq8](seq8/index.md)
+8-step CV/Gate sequencer with internal tempo and external clock sync.
+
+- [English Manual](seq8/manual.md)
+- [日本語マニュアル](seq8/manual_jp.md)
 
 ## Support
 

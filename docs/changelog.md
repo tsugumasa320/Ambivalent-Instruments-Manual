@@ -1,36 +1,19 @@
 # Changelog - Ambivalent Instruments
 
-## [2.0.3] - 2026-02-08
+## [2.0.3] - 2026-02-24
 
 ### New Modules
 
-#### Added
-- **Cheby**: Chebyshev harmonic generator added to the unified plugin
-- **Seq8**: 8-step CV/Gate sequencer added to the unified plugin
+- **AutoPanTremolo**: Stereo auto-pan and tremolo effect with morphable LFO waveforms (Sine/Triangle/Saw/S&H), tempo sync via external clock, and adjustable stereo phase
+- **Cheby**: Chebyshev harmonic generator with 8 independent harmonic sliders (H1–H8), dry/wet mix, and optional soft clip output
+- **Seq8**: 8-step CV/Gate sequencer with internal tempo (40–200 BPM) and external clock sync (0.25x / 0.5x / 1x / 2x / 4x multiplier)
 
-### Seq8 Module
+### Fixed
 
-#### Fixed
-- **Fast sync stability**: x2/x4 external sync freeze at high clock rates is fixed
-- **Reset/sync priority**: RESET now takes priority when RESET and SYNC arrive on the same sample
+- **Grainer**: Fixed implementation bug that was converting input audio to mono.
+- **Delay**: Fixed typo in panel labeling.
+- **All**: Reduced processing load through optimization.
 
-#### Improved
-- **Tempo LED behavior**: Low base brightness + pulse overlay for better sync-change visibility
-
-### Cheby Module
-
-#### Added
-- **Soft clip option**: Context-menu toggle `Soft Clip Outputs`
-
-#### Changed
-- **Soft clip curve**: Output soft clip uses Mutable-style transfer (`ambivalent::dsp::softLimit`)
-
-### Soft Clip Defaults
-
-#### Changed
-- **Default OFF policy**: Soft clip default is OFF across modules; Grainer initial state is aligned to OFF
-
----
 
 ## [2.0.2] - 2026-02-04
 

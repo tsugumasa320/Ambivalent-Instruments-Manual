@@ -114,13 +114,8 @@
 
 ## コンテキストメニュー
 
-- Soft clip
-- Reverb stereo
-- Reverb stereo mod
-- Reverb decorrelate
-- Reverb stereo mod depth (ms)
-- Reverb stereo mod rate (Hz)
-- Density gain compensation
-- Density compensation strength
-- Grain voices (4/8/16/32/48/64/96/128)
-- Window shape strength
+- **Soft clip** — 出力のソフトクリッピング切り替え（Soft clip 既定値: OFF）
+- **Density gain compensation** — デンシティ変更時の音量補正
+- **Density Compensation Strength** — 補正量調整スライダー
+- **Grain Voices** — ポリフォニー数設定: 4 / 8 / 16 / 32 / 48 / 64 / 96 / 128
+- **Window Shape Strength (b)** — ウィンドウ形状カーブ調整スライダー

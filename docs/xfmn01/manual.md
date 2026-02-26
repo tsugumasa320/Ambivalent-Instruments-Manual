@@ -27,17 +27,16 @@ Two-operator FM synth with delay and filter. Use algorithm, octave, and filter m
   - **Value = 1.0**: Delay only
 
 **INDEX 1** (0.1–5.0, default 4.0)
-- OP1 FM index
-- **Examples**:
-  - **Value = 0.1**: Light modulation
-  - **Value = 5.0**: Heavy modulation
-
+- FM index depth for operator 1 — controls the modulation amount applied to operator 1
+- Higher values produce more complex, brighter timbres
+  - **Examples**:
+  - **Value = 0.1**: Subtle modulation, near-sine tone
+  - **Value = 5.0**: Heavy modulation, dense harmonics
 **INDEX 2** (0.1–5.0, default 2.0)
-- OP2 FM index
+- FM index depth for operator 2 — controls the modulation amount applied to operator 2
 - **Examples**:
-  - **Value = 0.1**: Light modulation
+  - **Value = 0.1**: Subtle modulation
   - **Value = 5.0**: Heavy modulation
-
 **OUTPUT GAIN** (-24 to +24dB, default 0dB)
 - Output gain
 - **Examples**:
@@ -45,17 +44,19 @@ Two-operator FM synth with delay and filter. Use algorithm, octave, and filter m
   - **Value = +24dB**: High level
 
 **RATIO 1** (0.1–15.0, default 1.0)
-- OP1 ratio
+- Operator 1 frequency ratio vs base pitch (0.1x – 15x)
+- Integer ratios (1, 2, 3...) produce harmonic tones; non-integer ratios create inharmonic, bell-like textures
 - **Examples**:
-  - **Value = 0.1**: Low ratio
-  - **Value = 15.0**: High ratio
-
+  - **Value = 1.0**: Fundamental pitch
+  - **Value = 2.0**: Octave above
+  - **Value = 0.5**: Octave below
+  - **Value = 1.41**: Inharmonic, metallic tone
 **RATIO 2** (0.1–15.0, default 1.0)
-- OP2 ratio
+- Operator 2 frequency ratio vs base pitch (0.1x – 15x)
 - **Examples**:
-  - **Value = 0.1**: Low ratio
-  - **Value = 15.0**: High ratio
-
+  - **Value = 1.0**: Fundamental pitch
+  - **Value = 3.0**: Third harmonic
+  - **Value = 7.5**: Complex inharmonic ratio
 **FILTER Q** (0.2–6.0, default 0.8)
 - Filter resonance
 - **Examples**:
@@ -81,11 +82,10 @@ Two-operator FM synth with delay and filter. Use algorithm, octave, and filter m
   - **Value = 12000Hz**: Open
 
 **ALGORITHM** (Chaos / Wide / Pure, default Pure)
-- FM mode
-- **Examples**:
-  - **Value = Chaos**: Unstable texture
-  - **Value = Pure**: Clean FM
-
+- FM routing preset — selects how the two operators are connected
+- **Chaos**: Cross-modulation between both operators for unstable, evolving textures
+- **Wide**: Parallel operator topology for broad, layered sound
+- **Pure**: Standard FM (operator 2 modulates operator 1) for classic clean FM synthesis
 **OCTAVE MODE** (Sub Oct / Bypass / Upper Oct, default Bypass)
 - Octave mode
 - **Examples**:

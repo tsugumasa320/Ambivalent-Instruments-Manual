@@ -114,13 +114,8 @@ Grainer processes incoming audio with up to 128 grains and a 5-second buffer. Pi
 
 ## Context Menu
 
-- Soft clip
-- Reverb stereo
-- Reverb stereo mod
-- Reverb decorrelate
-- Reverb stereo mod depth (ms)
-- Reverb stereo mod rate (Hz)
-- Density gain compensation
-- Density compensation strength
-- Grain voices (4/8/16/32/48/64/96/128)
-- Window shape strength
+- **Soft clip** — Toggle soft clipping on the output (Soft clip default: OFF)
+- **Density gain compensation** — Compensate volume changes from density
+- **Density Compensation Strength** — Slider to adjust compensation amount
+- **Grain Voices** — Set polyphony count: 4 / 8 / 16 / 32 / 48 / 64 / 96 / 128
+- **Window Shape Strength (b)** — Slider to adjust window shape curve
