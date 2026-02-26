@@ -27,7 +27,7 @@
 各モードで異なるスケーリングを適用：
 - **Reverseモード**: より少なめ（逆再生時のブーストアップ防止）
 - **Ping-pongモード**: 標準
-- **Repitch/Fadeモード**: 標準
+- **Repitch/Octaveモード**: 標準
 
 ### フィードバック保護
 - 最大95%制限で無限ループ防止
@@ -69,7 +69,7 @@ output = drySignal * dryGain + wetSignal * wetGain
 - 目的: 急激なディレイタイム変更時の高周波ノイズ抑制
 
 **適用箇所**
-- Fadeモード: クロスフェード遷移時のノイズ抑制
+- Octaveモード: グラニュラー遷移時のノイズ抑制
 - Repitchモード: ピッチシフト時のアーティファクト抑制
 - Reverseモード: 逆再生時のスムージング
 
@@ -130,7 +130,7 @@ output = drySignal * dryGain + wetSignal * wetGain
 ## 使用例
 
 ### 基本的なディレイ・エフェクト
-1. MODEボタンでFadeモード選択
+1. MODEボタンでOctaveモード選択
 2. TIMEを0.5秒に設定（12時位置 = 2.5秒）
 3. FEEDBACKを0.5に設定（適度な反響）
 4. WETを0.3に設定（30%ウェット、70%ドライ）
@@ -143,7 +143,7 @@ output = drySignal * dryGain + wetSignal * wetGain
 4. モジュレーションを軽く適用（小さなLFO）
 
 ### アンビエント・サウンド
-1. MODEボタンでFadeモード選択
+1. MODEボタンでOctaveモード選択
 2. TIMEを長めに設定
 3. FEEDBACKを低めに設定
 4. TONEをローパスに設定（暗いサウンド）
