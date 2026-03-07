@@ -1,5 +1,7 @@
 # Ambivalent Instruments
 
+Ambivalent Instruments is also abbreviated as `ambv inst.` or `ambv`.
+
 ### [Grainer](grainer/index.md)
 Real-time granular synthesis processor with multi-grain engine and advanced modulation.
 
