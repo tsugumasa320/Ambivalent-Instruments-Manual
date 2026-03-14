@@ -1,5 +1,13 @@
 # Changelog - Ambivalent Instruments
 
+## [2.0.4] - 2026-03-14
+
+### Improved
+
+- **AutoPanTremolo**: The built-in waveform screen is easier to read at high Amount settings and no longer crowds the display edges.
+- **Seq8**: The CV and Gate output jacks now match the panel labeling, and the panel artwork has been updated to reflect the final layout.
+- **Installer workflow**: macOS installs are now more predictable, with separate architecture-aware install behavior and a new one-command install for both Apple Silicon and Intel builds.
+
 ## [2.0.3] - 2026-02-24
 
 ### New Modules
