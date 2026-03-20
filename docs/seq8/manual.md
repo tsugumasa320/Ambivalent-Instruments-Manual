@@ -9,6 +9,7 @@ Seq8 cycles through 8 steps, outputting a CV voltage and gate pulse for each ste
 ## Parameters
 
 **STEP 1–8** (0.0–1.0, default 0.0)
+
 - CV value for each step (output range: 0–10V)
 - **Examples**:
   - **Value = 0.0**: 0V output
@@ -16,6 +17,7 @@ Seq8 cycles through 8 steps, outputting a CV voltage and gate pulse for each ste
   - **Value = 1.0**: 10V output
 
 **TEMPO** (default 0.5)
+
 - Without external clock: sets internal tempo from 40–200 BPM
 - With external clock: selects sync multiplier
   - 0.25x / 0.5x / 1x / 2x / 4x
@@ -34,8 +36,8 @@ Seq8 cycles through 8 steps, outputting a CV voltage and gate pulse for each ste
 - **Audio Out**: None
 - **Clock In**: External clock input (triggers step advance)
 - **Reset In**: Reset trigger (returns to step 1)
-- **CV Out**: Step CV (0–10V, mono)
-- **Gate Out**: Gate pulse per step (10V, mono)
+- **CV Out**: Step CV (0–10V, mono), available at the left output jack
+- **Gate Out**: Gate pulse per step (10V, mono), available at the right output jack
 
 ## Behavior Notes
 

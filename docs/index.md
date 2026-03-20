@@ -62,6 +62,9 @@ Chebyshev harmonic generator with H1-H8 sliders for rich harmonic shaping.
 - [English Manual](seq8/manual.md)
 - [日本語マニュアル](seq8/manual_jp.md)
 
+### [Changelog](changelog.md)
+Latest release notes and user-facing updates for Ambivalent Instruments.
+
 ## Support
 
 For support and donations: [PayPal.Me/tsugumasa320](https://paypal.me/tsugumasa320)

@@ -4,9 +4,8 @@
 
 ### Improved
 
-- **AutoPanTremolo**: The built-in waveform screen is easier to read at high Amount settings and no longer crowds the display edges.
-- **Seq8**: The CV and Gate output jacks now match the panel labeling, and the panel artwork has been updated to reflect the final layout.
-- **Installer workflow**: macOS installs are now more predictable, with separate architecture-aware install behavior and a new one-command install for both Apple Silicon and Intel builds.
+- **AutoPanTremolo**: The built-in waveform screen is easier to read at high Amount settings, with cleaner spacing inside the display.
+- **Seq8**: The output jack layout now matches the panel labeling, with CV on the left and Gate on the right, and the panel artwork has been updated to reflect the final layout.
 
 ## [2.0.3] - 2026-02-24
 
