@@ -38,6 +38,12 @@ Modulo operator utility module with fixed gain scaling and dry/wet mixing.
 - [English Manual](modulo/manual.md)
 - [日本語マニュアル](modulo/manual_jp.md)
 
+### [NØ!SE//ERR](noise-err/index.md)
+Dual-output noise oscillator for moving between harmonic motion and unstable noise.
+
+- [English Manual](noise-err/manual.md)
+- [日本語マニュアル](noise-err/manual_jp.md)
+
 ### [GroupDelay](group-delay/index.md)
 Group delay effect using cascaded all-pass filters for transient shaping and phase dispersion.
 

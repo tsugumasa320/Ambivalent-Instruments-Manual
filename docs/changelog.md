@@ -1,5 +1,18 @@
 # Changelog - Ambivalent Instruments
 
+## [2.0.5] - 2026-04-04
+
+### New Modules
+
+- **NØ!SE//ERR**: Dual-output noise oscillator with switchable `SIN/SAW` and `RECT/RAND` banks, band-pass shaping, wavefold, drive, and paired outputs for moving between harmonic tone and unstable noise.
+
+### Improved
+
+- **Grainer**: Reduced seam clicks and improved sub-unity pitch quantize behavior.
+- **Grainer**: Refined DSP state handling, persistence, and Rack adapter behavior for more consistent patch restore and runtime control.
+- **Grainer Tests**: Expanded regression coverage for seam avoidance, reverb initialization, performance, and core behavior.
+- **AutoPanTremolo**: Updated browser tags for improved discoverability.
+
 ## [2.0.4] - 2026-03-14
 
 ### Improved
