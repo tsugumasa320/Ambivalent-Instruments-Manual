@@ -65,9 +65,9 @@ AutoPanTremolo applies rhythmic stereo movement (Pan mode) or volume modulation 
 
 ## I/O / CV
 
-- **Audio In**: L/R (right unconnected copies left)
-- **Audio Out**: L/R
-- **CV In**: Amount CV, Freq CV, Phase CV, Clock
+- **Audio In**: L/R. Polyphonic audio inputs are summed per side before processing. If the right input is unconnected, the summed left input is copied to the right side.
+- **Audio Out**: Stereo L/R. Each output port always emits a single channel.
+- **CV In**: Amount CV, Freq CV, Phase CV, Clock. Polyphonic CV cables use channel 1 only.
 
 ## Context Menu
 

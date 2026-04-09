@@ -12,6 +12,9 @@
 - **Grainer**: Refined DSP state handling, persistence, and Rack adapter behavior for more consistent patch restore and runtime control.
 - **Grainer Tests**: Expanded regression coverage for seam avoidance, reverb initialization, performance, and core behavior.
 - **AutoPanTremolo**: Updated browser tags for improved discoverability.
+- **AutoPanTremolo**: Polyphonic audio inputs are now summed per side while the stereo outputs stay fixed at one channel per port.
+- **Cheby**: Polyphonic stereo inputs now follow the same summed-input path consistently, with both outputs fixed at one channel per port.
+- **Effect Tests**: Added regression coverage for summed polyphonic input handling and mono channel-count output behavior.
 
 ## [2.0.4] - 2026-03-14
 

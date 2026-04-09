@@ -48,8 +48,8 @@ Cheby generates harmonics from an input signal using Chebyshev polynomials. Each
 
 ## I/O / CV
 
-- **Audio In**: L/R (right input unconnected copies left)
-- **Audio Out**: L/R
+- **Audio In**: L/R. Polyphonic audio inputs are summed per side before processing. If the right input is unconnected, the summed left input is copied to the right side.
+- **Audio Out**: Stereo L/R. Each output port always emits a single channel.
 - **CV In**: None
 
 ## Context Menu

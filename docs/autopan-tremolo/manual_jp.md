@@ -65,9 +65,9 @@ AutoPanTremoloは、ステレオ入力に対してリズミカルなステレオ
 
 ## 入出力 / CV
 
-- **Audio In**: L/R（右が未接続の場合は左をコピー）
-- **Audio Out**: L/R
-- **CV In**: Amount CV, Freq CV, Phase CV, Clock
+- **Audio In**: L/R。ポリフォニック音声入力は左右それぞれの全チャンネルを合算してから処理します。右が未接続の場合は、左の合算入力を右側にもコピーします。
+- **Audio Out**: ステレオ L/R。各出力ポートのチャンネル数は常に 1ch です。
+- **CV In**: Amount CV, Freq CV, Phase CV, Clock。ポリフォニック CV ケーブルを接続した場合は 1ch 目を使用します。
 
 ## コンテキストメニュー
 
