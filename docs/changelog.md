@@ -1,5 +1,16 @@
 # Changelog - Ambivalent Instruments
 
+## [2.0.6] - 2026-04-20
+
+### New Modules
+
+- **Feedback EQ8**: The EQ8 layout with the master slider replaced by a bipolar Feedback Amount that sends the EQ output back into the input. Push any band up to color the feedback and drive the module into resonance or self-oscillation, with built-in limiting keeping the loop stable.
+
+### Improved
+
+- **Grainer**: Smoother transitions when entering or leaving freeze, reducing seams and edge clicks.
+- **Build**: `make install` now installs both Apple Silicon and Intel macOS builds in a single step.
+
 ## [2.0.5] - 2026-04-04
 
 ### New Modules
