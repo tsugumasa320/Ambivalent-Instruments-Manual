@@ -8,6 +8,7 @@
 
 ### Improved
 
+- **Feedback EQ8**: Clarified the Rack library description to match global feedback (not per-band feedback).
 - **Grainer**: Smoother transitions when entering or leaving freeze, reducing seams and edge clicks.
 - **Build**: `make install` now installs both Apple Silicon and Intel macOS builds in a single step.
 
