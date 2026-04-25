@@ -4,7 +4,7 @@ Stereo 8-band EQ with one global feedback loop.
 
 ## Overview
 
-`Feedback EQ8` starts from the same fixed-band EQ layout as `EQ8`, but replaces the master gain slider with a bipolar `Feedback Amount` control. Instead of simply making the whole signal louder or quieter, that slider sends part of the EQ output back into the EQ input.
+`Feedback EQ8` is a stereo 8-band parametric EQ with fixed frequency bands and one bipolar `Feedback Amount` control. Instead of simply making the whole signal louder or quieter, that control sends part of the EQ output back into the EQ input.
 
 This means the EQ bands do two jobs at once: they shape the audible output, and they decide which frequency areas are emphasized inside the feedback loop. Gentle settings work like a resonant tone shaper. Stronger settings can move toward ringing, howl, and controlled self-oscillation.
 
@@ -25,7 +25,7 @@ The loop is stabilized internally with a soft limiter and a DC blocker. The limi
 - **Details**: The internal loop is clamped to `±95%` and stabilized with an in-loop `tanh` limiter plus a DC blocker around `20Hz`.
 
 **EQ BANDS** (`±12dB` each, default `0dB`)
-- The 8 fixed bands match `EQ8`: `60Hz`, `170Hz`, `310Hz`, `600Hz`, `1kHz`, `3kHz`, `6kHz`, `12kHz`.
+- The 8 fixed bands are `60Hz`, `170Hz`, `310Hz`, `600Hz`, `1kHz`, `3kHz`, `6kHz`, and `12kHz`.
 - `60Hz` is a low shelf, `12kHz` is a high shelf, and the middle bands shape the main resonant color.
 - **GUI Display**: Each band slider shows gain in dB from `-12.00 dB` to `+12.00 dB`.
 - **Examples**:
@@ -34,7 +34,7 @@ The loop is stabilized internally with a soft limiter and a DC blocker. The limi
   - **High band cut/boost**: Boost `6kHz` or `12kHz` for bright, unstable edge, or cut them to keep the feedback darker and smoother.
   - **Mixed curve**: Cut lows, boost mids, and slightly lift highs to make the loop focus on presence instead of rumble.
 - **Uses**: Think of the EQ sliders as "feedback color selectors". The more you boost a band, the more that frequency region tends to dominate the loop.
-- **Details**: The panel is laid out like EQ8, with the higher bands at the top and the lower bands near the bottom.
+- **Details**: The panel places the higher bands at the top and the lower bands near the bottom.
 
 ## I/O / CV
 
@@ -54,7 +54,7 @@ The loop is stabilized internally with a soft limiter and a DC blocker. The limi
 
 ## Usage Examples
 
-- **Plain EQ mode**: Keep `Feedback Amount` at `0%` and use the module as a fixed 8-band EQ with the same band layout as `EQ8`.
+- **Plain EQ mode**: Keep `Feedback Amount` at `0%` and use the module as a fixed 8-band EQ without added feedback.
 - **Resonant tone shaping**: Set `Feedback Amount` around `+30%` to `+50%`, then boost one or two bands to make those areas ring more than the rest of the source.
 - **Near self-oscillation**: Push `Feedback Amount` above `+70%` and boost a narrow tonal area in the mids or highs. Small slider changes can make a large audible difference here.
 - **Negative feedback texture**: Move `Feedback Amount` below `0%` for a different phase interaction. This is useful when positive feedback becomes too obvious or boomy.

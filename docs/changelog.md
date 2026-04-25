@@ -4,7 +4,7 @@
 
 ### New Modules
 
-- **Feedback EQ8**: The EQ8 layout with the master slider replaced by a bipolar Feedback Amount that sends the EQ output back into the input. Push any band up to color the feedback and drive the module into resonance or self-oscillation, with built-in limiting keeping the loop stable.
+- **Feedback EQ8**: Stereo 8-band parametric EQ with a bipolar Feedback Amount control that sends part of the EQ output back into the input. Push any band up to color the feedback and drive the module into resonance or self-oscillation, with built-in limiting keeping the loop stable.
 
 ### Improved
 
