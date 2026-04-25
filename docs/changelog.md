@@ -12,7 +12,6 @@
 - **EQ8, Feedback EQ8, Delay, Modulo, Cheby, AutoPan**: Polyphonic inputs with per-channel expansion.
 - **Group Delay**: Smoothed modulated parameter updates to reduce zipper noise.
 - **Grainer**: Smoother transitions when entering or leaving freeze, reducing seams and edge clicks.
-- **Build**: `make install` now installs both Apple Silicon and Intel macOS builds in a single step.
 
 ## [2.0.5] - 2026-04-04
 
