@@ -81,15 +81,11 @@ Latest release notes and user-facing updates for Ambivalent Instruments.
 
 For support and donations: [PayPal.Me/tsugumasa320](https://paypal.me/tsugumasa320)
 
-## Installation
-
-These plugins are available through the VCV Rack Library or can be built from source code.
-
 ## Feedback Welcome!
 
 This project is currently published on VCV Rack as an experimental environment, with the goal of eventually releasing it as a hardware product. Feedback is always welcome.
 
-**If you create performance videos or sound demos using these modules, please let us know! We'd love to feature them on our website.**
+**If you create performance videos or sound demos using these modules, please let us know. We'd love to add them to the [Ambivalent Instruments YouTube Playlist](https://www.youtube.com/watch?v=NRP2AxvLqio&list=PL6o2dcnp5dMSgZ6eMtuvQVqUMALISVYqC).**
 
 Contact: tsugumasa320 [at] gmail [dot] com
 
