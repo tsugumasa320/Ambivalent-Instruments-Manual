@@ -10,7 +10,7 @@
 
 - **Feedback EQ8**: Clarified the Rack library description to match global feedback (not per-band feedback).
 - **EQ8, Feedback EQ8, Delay, Modulo, Cheby, AutoPan**: Polyphonic inputs with per-channel expansion.
-- **Group Delay**: Smoothed modulated parameter updates to reduce zipper noise; added tests.
+- **Group Delay**: Smoothed modulated parameter updates to reduce zipper noise.
 - **Grainer**: Smoother transitions when entering or leaving freeze, reducing seams and edge clicks.
 - **Build**: `make install` now installs both Apple Silicon and Intel macOS builds in a single step.
 
@@ -24,11 +24,9 @@
 
 - **Grainer**: Reduced seam clicks and improved sub-unity pitch quantize behavior.
 - **Grainer**: Refined DSP state handling, persistence, and Rack adapter behavior for more consistent patch restore and runtime control.
-- **Grainer Tests**: Expanded regression coverage for seam avoidance, reverb initialization, performance, and core behavior.
 - **AutoPanTremolo**: Updated browser tags for improved discoverability.
 - **AutoPanTremolo**: Polyphonic audio inputs are now summed per side while the stereo outputs stay fixed at one channel per port.
 - **Cheby**: Polyphonic stereo inputs now follow the same summed-input path consistently, with both outputs fixed at one channel per port.
-- **Effect Tests**: Added regression coverage for summed polyphonic input handling and mono channel-count output behavior.
 
 ## [2.0.4] - 2026-03-14
 

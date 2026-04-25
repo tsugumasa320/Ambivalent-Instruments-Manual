@@ -52,6 +52,10 @@ nav:
     - Overview: eq8/index.md
     - Manual (English): eq8/manual.md
     - Manual (日本語): eq8/manual_jp.md
+  - Feedback EQ8:
+    - Overview: feedback-eq8/index.md
+    - Manual (English): feedback-eq8/manual.md
+    - Manual (日本語): feedback-eq8/manual_jp.md
   - XFMN-01:
     - Overview: xfmn01/index.md
     - Manual (English): xfmn01/manual.md

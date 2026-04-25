@@ -14,6 +14,12 @@ Professional 8-band stereo parametric equalizer optimized for music production.
 - [English Manual](eq8/manual.md)
 - [日本語マニュアル](eq8/manual_jp.md)
 
+### [Feedback EQ8](feedback-eq8/index.md)
+8-band stereo EQ with a global feedback loop for resonance and self-oscillation.
+
+- [English Manual](feedback-eq8/manual.md)
+- [日本語マニュアル](feedback-eq8/manual_jp.md)
+
 ### [XFMN-01](xfmn01/index.md)
 Cross-FM noise synthesizer with advanced modulation capabilities.
 
