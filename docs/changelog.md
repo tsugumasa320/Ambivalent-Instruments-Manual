@@ -9,7 +9,7 @@
 ### Improved
 
 - **EQ8, Delay, Modulo, Cheby, AutoPan**: Polyphonic inputs with per-channel expansion.
-- **Group Delay**: Smoothed modulated parameter updates to reduce zipper noise.
+- **Group Delay**: Smoothed modulated parameter updates to reduce zipper noise, and fixed a bug where the sound changed after reopening a patch.
 - **Grainer**: Fixed a bug where pressing Freeze reset the reverb state.
 
 ## [2.0.5] - 2026-04-04
