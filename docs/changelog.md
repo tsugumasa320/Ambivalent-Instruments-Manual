@@ -22,7 +22,6 @@
 
 - **Grainer**: Reduced seam clicks and improved sub-unity pitch quantize behavior.
 - **Grainer**: Refined DSP state handling, persistence, and Rack adapter behavior for more consistent patch restore and runtime control.
-- **AutoPanTremolo**: Updated browser tags for improved discoverability.
 - **AutoPanTremolo**: Polyphonic audio inputs are now summed per side while the stereo outputs stay fixed at one channel per port.
 - **Cheby**: Polyphonic stereo inputs now follow the same summed-input path consistently, with both outputs fixed at one channel per port.
 
