@@ -8,34 +8,33 @@ Grainer processes incoming audio with up to 128 grains and a 6-second buffer. Pi
 
 ## Parameters
 
-**GRAIN LENGTH** (50–1000ms, default 525ms)
-- Source-side read length (M4L `__ty.grain` parity).
-- Each voice's actual grain period scales with pitch: `size_ms / |pitch|` ms
-  (e.g. pitch=2x halves the period while still reading the full source segment).
-- **Live-tracked**: changes apply to currently playing grains as well, matching M4L `phasor~ @lock 1`. Active grains will end sooner/later as you sweep the knob.
+**GRAIN LENGTH** (panel **0–100%**, default ≈ 50%)
+- Relative **how much of the buffer one grain reads** (the panel shows percent only, not milliseconds).
+- Internally the knob still maps to the 50–1000 range used by the DSP as a source-span control (actual wall-clock length depends on sample rate and pitch).
+- **Audible grain duration** shrinks as pitch increases because the same source span is scanned faster.
+- **Live-tracked**: changes apply to currently playing grains as well (length and read rate follow the knob/CV).
 - **Examples**:
-  - **Value = 50ms**: Short grains (50ms period at pitch=1x)
-  - **Value = 1000ms**: Long grains (1000ms at pitch=1x, 333ms at pitch=3x)
+  - **Low %**: Short grains, finer grain cloud
+  - **High %**: Long grains, smoother texture
 
 **DENSITY** (0.0–100.0, default 50.0)
-- Per-cycle grain gate probability (displayed as **0–100%**, M4L `__ty.grain` parity).
-- Each time a voice's phasor wraps, a grain is fired when `random < density / 100`.
-- Effective grain density follows `density% × poly_voices × |pitch| / size_seconds`.
+- Each time a voice's internal cycle wraps, a new grain fires with probability `density / 100` (**0–100%** gate).
+- Effective grain density roughly follows `density% × poly_voices × |pitch| / grain_length_seconds`.
 - **Examples**:
   - **Value = 0.0**: No grains
   - **Value = 50.0**: On average half of each voice's wraps trigger a grain
-  - **Value = 100.0**: Every wrap triggers (matches the M4L upper limit)
+  - **Value = 100.0**: Every wrap from every voice triggers a grain
 
 **PITCH** (-1.0–1.0, default 0.0)
 - Playback pitch (displayed as 1/3x–3x)
-- **Live-tracked**: turning the knob/CV updates **currently playing grains immediately** (M4L `phasor~ @lock 1` parity). The locked random/quantize ratio relative to the base pitch is preserved within each grain.
+- **Live-tracked**: turning the knob/CV updates **currently playing grains immediately**. The random/quantize ratio relative to the base pitch is locked per grain.
 - **Examples**:
   - **Value = 0.0**: 1x
   - **Value = 1.0**: 3x
 
 **PITCH RANDOM** (0.0–3.0, default 0.0)
 - Random pitch range (±octaves)
-- The random offset is sampled at trigger time and locked for the duration of the grain (M4L `sah~ phasor` parity).
+- The random offset is sampled at trigger time and locked for the duration of the grain.
 - **Examples**:
   - **Value = 0.0**: No randomization
   - **Value = 3.0**: Large randomization
@@ -71,7 +70,7 @@ Grainer processes incoming audio with up to 128 grains and a 6-second buffer. Pi
 - **Examples**:
   - **Value = 0**: Oldest
   - **Value = 100**: Newest
-- **Note**: When pitch is significantly increased and size is large, the actual read position may differ from the displayed knob value by a small amount (up to ~8%) to avoid click artifacts caused by reading across the ring buffer seam.
+- **Note**: When pitch is significantly increased and Grain Length is large, the actual read position may differ from the displayed knob value by a small amount (up to ~8%) to avoid click artifacts caused by reading across the ring buffer seam.
 
 **POSITION RANDOM** (0.0–1.0, default 0.5)
 - Position random amount
@@ -105,7 +104,7 @@ Grainer processes incoming audio with up to 128 grains and a 6-second buffer. Pi
 
 **REVERSE** (button)
 - Toggle reverse playback
-- **Live-tracked**: toggling mid-playback flips the direction of currently playing grains on the next sample (M4L parity).
+- **Live-tracked**: toggling mid-playback flips the direction of currently playing grains on the next sample.
 - **Examples**:
   - **OFF**: Forward
   - **ON**: Reverse
