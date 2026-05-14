@@ -1,6 +1,6 @@
 # Crackl
 
-Inspired by *Velvet Sunset* by manual, this small noise generator adds a touch of warmth and melancholy behind beautiful harmonies. With its delicate texture and understated presence, it blends a sense of transience into patches and performances.
+Inspired by *Velvet Sunset* by **manual** (the artist), this small noise generator adds a touch of warmth and melancholy behind beautiful harmonies. With its delicate texture and understated presence, it blends a sense of transience into patches and performances.
 
 ## Features
 

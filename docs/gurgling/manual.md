@@ -14,7 +14,7 @@ A **4 HP** stereo texture source that sits between filtered noise and bubbling w
 
 **Clarity** (`0 .. 100 %`, default `100 %`)
 
-- Depth of clarity / brightness modulation (see DSP for exact mapping).
+- How strong the clarity / brightness layer feels on the bubble exciter: higher values push brighter, more “lit up” motion; lower values keep the bed softer and more muffled.
 
 **Freq** (`0 .. 100 %`, default `10 %`)
 

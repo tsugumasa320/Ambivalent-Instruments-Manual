@@ -17,7 +17,7 @@ Synthesizes rain sound. You can shape density, filter position, reverb amount, a
 
 ## Quick Start
 
-1. Patch **Out L** and **Out R** into your mixer or interface
+1. Patch **Audio L** and **Audio R** into your mixer or interface
 2. Raise **Density** until the bed feels present, then adjust **Filter** for tone (dark to bright)
 3. Add **Reverb** for space; use **Width** to collapse to mono or widen the field
 4. Modulate **Density CV** / **Filter CV** / **Reverb CV** / **Width CV** from sequencers or LFOs

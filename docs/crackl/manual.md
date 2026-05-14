@@ -1,6 +1,6 @@
 # Crackl
 
-Inspired by *Velvet Sunset* by manual: a compact **mono** texture generator with three parallel “crackle” voices, shared shaping, and a single output.
+Inspired by *Velvet Sunset* by **manual** (the artist): a compact **mono** texture generator with three parallel “crackle” voices, shared shaping, and a single output.
 
 ## Overview
 
