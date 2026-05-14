@@ -1,5 +1,17 @@
 # Changelog - Ambivalent Instruments
 
+## [2.0.8] - 2026-05-12
+
+### New Modules
+
+- **Crackl**: Three-voice crackle / texture generator with morphing oscillators, per-voice noise modulation, shared drive and modulo, sample-rate shaping, and mono output.
+- **Rain**: 4 HP stereo rain-bed with density, DJ-style filter, Clouds-style reverb, animated panel, and Mid/Side width.
+- **Gurgling**: 4 HP stereo bubbling texture with density, clarity, filter-rate, Mid/Side width, and CV on every control.
+
+### Documentation
+
+- Added MkDocs manuals (English / 日本語) and overview pages for **Crackl**, **Rain**, and **Gurgling**.
+
 ## [2.0.6] - 2026-04-20
 
 ### New Modules

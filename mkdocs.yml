@@ -88,6 +88,18 @@ nav:
     - Overview: seq8/index.md
     - Manual (English): seq8/manual.md
     - Manual (日本語): seq8/manual_jp.md
+  - Crackl:
+    - Overview: crackl/index.md
+    - Manual (English): crackl/manual.md
+    - Manual (日本語): crackl/manual_jp.md
+  - Rain:
+    - Overview: rain/index.md
+    - Manual (English): rain/manual.md
+    - Manual (日本語): rain/manual_jp.md
+  - Gurgling:
+    - Overview: gurgling/index.md
+    - Manual (English): gurgling/manual.md
+    - Manual (日本語): gurgling/manual_jp.md
   - Changelog: changelog.md
 
 # Markdown extensions

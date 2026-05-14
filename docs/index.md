@@ -50,6 +50,24 @@ Dual-output noise oscillator for moving between harmonic motion and unstable noi
 - [English Manual](noise-err/manual.md)
 - [日本語マニュアル](noise-err/manual_jp.md)
 
+### [Crackl](crackl/index.md)
+Three-voice crackle texture generator with shared drive, modulo, and sample-rate shaping (mono out).
+
+- [English Manual](crackl/manual.md)
+- [日本語マニュアル](crackl/manual_jp.md)
+
+### [Rain](rain/index.md)
+Stereo rain-bed generator with density, DJ-style filter, Clouds-style reverb, and Mid/Side width (4 HP).
+
+- [English Manual](rain/manual.md)
+- [日本語マニュアル](rain/manual_jp.md)
+
+### [Gurgling](gurgling/index.md)
+Stereo bubbling-water texture with density, clarity, filter-rate, and Mid/Side width—each with CV (4 HP).
+
+- [English Manual](gurgling/manual.md)
+- [日本語マニュアル](gurgling/manual_jp.md)
+
 ### [GroupDelay](group-delay/index.md)
 Group delay effect using cascaded all-pass filters for transient shaping and phase dispersion.
 
