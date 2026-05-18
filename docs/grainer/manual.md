@@ -8,22 +8,9 @@ Grainer processes incoming audio with up to 128 grains and a 6-second buffer. Pi
 
 ## Parameters
 
-**GRAIN LENGTH** (panel **0–100%**, default ≈ 50%)
-- Relative **how much of the buffer one grain reads** (the panel shows percent only, not milliseconds).
-- Internally the knob still maps to the 50–1000 range used by the DSP as a source-span control (actual wall-clock length depends on sample rate and pitch).
-- **Audible grain duration** shrinks as pitch increases because the same source span is scanned faster.
-- **Live-tracked**: changes apply to currently playing grains as well (length and read rate follow the knob/CV).
-- **Examples**:
-  - **Low %**: Short grains, finer grain cloud
-  - **High %**: Long grains, smoother texture
+**GRAIN LENGTH** — how long each grain’s read spans in the buffer (**0–100%** on panel).
 
-**DENSITY** (0.0–100.0, default 50.0)
-- Each time a voice's internal cycle wraps, a new grain fires with probability `density / 100` (**0–100%** gate).
-- Effective grain density roughly follows `density% × poly_voices × |pitch| / grain_length_seconds`.
-- **Examples**:
-  - **Value = 0.0**: No grains
-  - **Value = 50.0**: On average half of each voice's wraps trigger a grain
-  - **Value = 100.0**: Every wrap from every voice triggers a grain
+**DENSITY** — **%** chance each voice fires a grain when its cycle wraps.
 
 **PITCH** (-1.0–1.0, default 0.0)
 - Playback pitch (displayed as 1/3x–3x)
@@ -127,9 +114,6 @@ Top-level entries, in order:
 
 - **Soft clip** — Toggle soft clipping on the output (default: OFF)
 - **Grain Voices** ▶ — Submenu to pick polyphony count (4 / 8 / 16 / 32 / 48 / 64 / 96 / 128). The right-side hint shows the current value
-- **Density gain compensation** — Toggle volume compensation when density changes
-- **Density Compensation Strength** — Slider to adjust compensation amount
-- **Window Shape Strength (b)** — Slider to adjust window shape curve
 - **SSD1306 preview** ▶ — Submenu for the OLED preview used when porting to Daisy
     - **Enable SSD1306 128x32 preview**: turn the on-panel preview on/off
     - **Tint** (White / Blue / Amber / Yellow/Blue (2-color)): preview color

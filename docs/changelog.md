@@ -1,6 +1,6 @@
 # Changelog - Ambivalent Instruments
 
-## [2.0.8] - 2026-05-12
+## [2.0.7] - 2026-05-18
 
 ### New Modules
 
@@ -11,6 +11,7 @@
 ### Documentation
 
 - Added MkDocs manuals (English / 日本語) and overview pages for **Crackl**, **Rain**, and **Gurgling**.
+- **Grainer**: Streamlined GRAIN LENGTH and DENSITY manual sections (English / 日本語); removed obsolete context-menu entries.
 
 ## [2.0.6] - 2026-04-20
 
