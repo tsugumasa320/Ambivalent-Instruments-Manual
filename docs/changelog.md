@@ -8,10 +8,15 @@
 - **Rain**: 4 HP stereo rain-bed with density, DJ-style filter, Clouds-style reverb, animated panel, and Mid/Side width.
 - **Gurgling**: 4 HP stereo bubbling texture with density, clarity, filter-rate, Mid/Side width, and CV on every control.
 
+### Improved
+
+- **Grainer**: Context menu **Pitch knob** — **Repitch** (default) or **Per-grain** for pitch knob/CV on active grains. Grain Length and Reverse remain live-tracked in both modes.
+
 ### Documentation
 
 - Added MkDocs manuals (English / 日本語) and overview pages for **Crackl**, **Rain**, and **Gurgling**.
 - **Grainer**: Streamlined GRAIN LENGTH and DENSITY manual sections (English / 日本語); removed obsolete context-menu entries.
+- **Grainer**: Documented **Pitch knob** Repitch / Per-grain modes (English / 日本語).
 
 ## [2.0.6] - 2026-04-20
 

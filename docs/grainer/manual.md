@@ -14,7 +14,8 @@ Grainer processes incoming audio with up to 128 grains and a 6-second buffer. Pi
 
 **PITCH** (-1.0–1.0, default 0.0)
 - Playback pitch (displayed as 1/3x–3x)
-- **Live-tracked**: turning the knob/CV updates **currently playing grains immediately**. The random/quantize ratio relative to the base pitch is locked per grain.
+- **Repitch** (default, context menu **Pitch knob → Repitch**): turning the knob/CV updates **currently playing grains immediately**. The random/quantize ratio relative to the base pitch is locked per grain.
+- **Per-grain** (**Pitch knob → Per-grain**): only **new** grains use the updated pitch; playing grains keep their trigger pitch until they finish (gradual texture crossfade). **Reverse** and **Grain Length** remain live-tracked on active grains.
 - **Examples**:
   - **Value = 0.0**: 1x
   - **Value = 1.0**: 3x
@@ -113,6 +114,7 @@ Grainer processes incoming audio with up to 128 grains and a 6-second buffer. Pi
 Top-level entries, in order:
 
 - **Soft clip** — Toggle soft clipping on the output (default: OFF)
+- **Pitch knob** ▶ — **Repitch** (default) or **Per-grain** (trigger-locked pitch on active grains)
 - **Grain Voices** ▶ — Submenu to pick polyphony count (4 / 8 / 16 / 32 / 48 / 64 / 96 / 128). The right-side hint shows the current value
 - **SSD1306 preview** ▶ — Submenu for the OLED preview used when porting to Daisy
     - **Enable SSD1306 128x32 preview**: turn the on-panel preview on/off
