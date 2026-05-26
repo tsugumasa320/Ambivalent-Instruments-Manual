@@ -1,6 +1,6 @@
 # Changelog - Ambivalent Instruments
 
-## [2.0.7] - 2026-05-18
+## [2.0.7] - 2026-05-26
 
 ### New Modules
 
@@ -11,12 +11,15 @@
 ### Improved
 
 - **Grainer**: Context menu **Pitch knob** — **Repitch** (default) or **Per-grain** for pitch knob/CV on active grains. Grain Length and Reverse remain live-tracked in both modes.
+- **AutoPanTremolo**: Stereo phase defaults to 180° with smoother encoder response; pan/tremolo switching is crossfaded for cleaner mode changes.
+- **Seq8**: Gate output pulses on every step advance, including steps at 0V CV and on reset to step 1.
 
 ### Documentation
 
 - Added MkDocs manuals (English / 日本語) and overview pages for **Crackl**, **Rain**, and **Gurgling**.
 - **Grainer**: Streamlined GRAIN LENGTH and DENSITY manual sections (English / 日本語); removed obsolete context-menu entries.
 - **Grainer**: Documented **Pitch knob** Repitch / Per-grain modes (English / 日本語).
+- **Seq8**: Documented gate behavior independent of CV level (English / 日本語).
 
 ## [2.0.6] - 2026-04-20
 

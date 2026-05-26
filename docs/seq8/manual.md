@@ -10,7 +10,7 @@ Seq8 cycles through 8 steps, outputting a CV voltage and gate pulse for each ste
 
 **STEP 1–8** (0.0–1.0, default 0.0)
 
-- CV value for each step (output range: 0–10V)
+- CV value for each step (output range: 0–10V). Gate output is independent of CV level.
 - **Examples**:
   - **Value = 0.0**: 0V output
   - **Value = 0.5**: 5V output
@@ -37,14 +37,14 @@ Seq8 cycles through 8 steps, outputting a CV voltage and gate pulse for each ste
 - **Clock In**: External clock input (triggers step advance)
 - **Reset In**: Reset trigger (returns to step 1)
 - **CV Out**: Step CV (0–10V, mono), available at the left output jack
-- **Gate Out**: Gate pulse per step (10V, mono), available at the right output jack
+- **Gate Out**: 1 ms gate pulse on every step advance (10V, mono), including steps at 0V CV; available at the right output jack
 
 ## Behavior Notes
 
 - When an external clock is connected, the Tempo knob switches to sync multiplier mode: 0.25x / 0.5x / 1x / 2x / 4x
 - RESET takes priority: if RESET and Clock triggers arrive on the same sample, the clock event is ignored and the sequence resets to step 1
 - Changing the sync multiplier resets the internal phase counter to prevent drift
-- Gate pulse duration is 1ms
+- Gate fires once per step (including reset to step 1), not tied to CV level. Pulse duration is 1 ms.
 
 ## Context Menu
 
