@@ -24,8 +24,9 @@ This makes the module useful both as a pitched oscillator and as a texture sourc
 
 **FREQ** (`20 Hz - 2000 Hz`, default `261.625565 Hz`)
 - Base oscillator frequency in Hertz
-- `V/Oct` is applied on top of this frequency
-- `Freq CV Trim` defaults to `0`, so external pitch CV is ignored until you raise the trim
+- The knob uses equal-octave (logarithmic) mapping: the display stays in Hz, but rotation changes pitch evenly across the range
+- `V/Oct` applies standard 1V/oct modulation (`× 2^V`) around the knob frequency; `0V` keeps the knob pitch
+- `Freq CV Trim` defaults to `1`, so you can plug a sequencer and play immediately; lower it to `0` to ignore pitch CV
 
 **Filter Cutoff** (`20 Hz - 20000 Hz`, default `440 Hz`)
 - Center frequency of the internal band-pass filter
@@ -35,7 +36,7 @@ This makes the module useful both as a pitched oscillator and as a texture sourc
 
 **Filter Gain** (`0 - 10000`, default `1`)
 - Pre-wavefold gain after filtering
-- Uses a logarithmic taper for finer control at lower gain values
+- Uses a logarithmic taper with a steeper low-gain knob curve (power exponent 0.5) so low gains do not occupy too much of the rotation
 
 **Wavefold** (`0 - 1`, default `0`)
 - Controls the amount of wavefolding after the filter gain stage
@@ -49,7 +50,7 @@ This makes the module useful both as a pitched oscillator and as a texture sourc
 ## I/O / CV
 
 - **V/Oct**: Pitch CV input
-- **Freq CV Trim**: Bipolar trim (`-1 .. 1`) for `V/Oct`; default `0`
+- **Freq CV Trim**: Bipolar trim (`-1 .. 1`) for `V/Oct`; default `1`
 - **Filter Cutoff CV**: Cutoff modulation input
 - **Filter Cutoff CV Trim**: Bipolar trim (`-1 .. 1`)
 - **Q CV**: Direct resonance modulation input
