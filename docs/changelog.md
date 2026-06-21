@@ -1,5 +1,16 @@
 # Changelog - Ambivalent Instruments
 
+## [2.0.8] - 2026-06-18
+
+### Improved
+
+- **NØ!SE//ERR**: Freq knob uses equal-octave (log) mapping with Hz display; V/Oct CV trim defaults to `1` for direct sequencer use; Filter Gain taper steepened above unity; saved patches migrate automatically.
+- **Rain**: CV input jack positions aligned with panel labels (Reverb / Filter rows).
+
+### Documentation
+
+- **NØ!SE//ERR**: Updated manuals (English / 日本語) for log Freq mapping, V/Oct trim default, and Filter Gain taper.
+
 ## [2.0.7] - 2026-05-26
 
 ### New Modules
